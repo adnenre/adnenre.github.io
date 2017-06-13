@@ -1,0 +1,356 @@
+/******************\
+       font
+\******************/
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Playfair+Display+Cabin+Sketch");
+/******************\
+        color
+\**************** */
+section {
+  width: 100%;
+}
+
+.block {
+  display: hidden;
+}
+
+.section-title {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.intro-title {
+  font-family: "Playfair Display", "Times New Roman", Serif;
+  font-size: 37px;
+  margin: 5px;
+}
+
+.navbar-transparent {
+  background: transparent;
+}
+
+.navbar-transparent .navbar-toggle .icon-bar {
+  background-color: #607D8B;
+}
+
+.navbar-transparent .navbar-toggle {
+  border-color: #607D8B;
+}
+
+.color-primary {
+  color: #607D8B;
+}
+
+.color-white {
+  color: white;
+}
+
+.bg-color-primary {
+  background: #607D8B;
+}
+
+.separetor-top {
+  height: 100px;
+  background-attachment: scroll,	scroll,	fixed;
+  background-image: url(image/top-1600.svg);
+  background-color: #CFD8DC;
+  background-size: 1600px 230px, auto, cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.separetor-bottom {
+  height: 100px;
+  background-attachment: scroll,	scroll,	fixed;
+  background-image: url(image/bottom-1600.svg);
+  background-color: #607D8B;
+  background-size: 1600px 230px, auto, cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+hr.inter-section {
+  background: transparent url(image/row.png) repeat scroll 0 0;
+  border-radius: 5px;
+  content: "";
+  display: block;
+  height: 10px;
+  margin: 50px auto;
+  text-align: center;
+  width: 70%;
+}
+
+#home {
+  height: 100vh;
+  background-attachment: scroll,	scroll,	fixed;
+  background-image: url(image/top-1600.svg);
+  background-color: #CFD8DC;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+#home .intro-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 250px;
+  margin: auto;
+}
+#home .intro-container .intro-top .my-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: solid 4px rgba(253, 253, 253, 0.5);
+  box-shadow: 0px 0px 43px 4px #706977;
+}
+#home .intro-container .intro-text {
+  color: #607D8B;
+}
+#home .intro-container .typed-text {
+  position: absolute;
+  bottom: -16px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 250px;
+}
+#home .intro-container .typed-text .intro-subtitle {
+  font-family: "Fira Sans", Arial, Sans-serif;
+  font-size: 12px;
+  margin: 5px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #607D8B;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/************\
+   navigation
+\************/
+.nav-menu {
+  padding: 25px;
+}
+.nav-menu ul li a {
+  color: #fdf7f7;
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #607D8B;
+  position: relative;
+  box-shadow: 0 0 20px 8px rgba(117, 117, 117, 0.44);
+  transition: 500ms;
+  z-index: 0;
+}
+.nav-menu ul li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  border-radius: 5px;
+  z-index: -1;
+  transition: 500ms;
+}
+.nav-menu ul li a:hover, .nav-menu ul li a:focus {
+  text-decoration: none;
+  box-shadow: 0 0 20px 5px rgba(117, 117, 117, 0.44);
+  color: #607D8B;
+}
+.nav-menu ul li a:hover::before, .nav-menu ul li a:focus::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  background: white;
+}
+
+.nav-elem {
+  width: 1px;
+  height: 50px;
+  background: #607D8B;
+  transition: 500ms;
+}
+
+.nav-elem:hover {
+  width: 100px;
+  height: 50px;
+  background: #607D8B;
+  transition: 500ms;
+}
+
+/****************\
+     Projets
+\****************/
+.nav-projects {
+  margin: 30px;
+}
+.nav-projects li {
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  display: inline-block;
+  float: none;
+}
+.nav-projects li a {
+  border-radius: 0;
+  padding: 8px 20px;
+  border: 1px solid #9E9E9E;
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.grid-item {
+  width: 33.333%;
+  margin-bottom: 25px;
+  float: left;
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+/*******************************
+************ Competence ************/
+.widget-container {
+  padding: 50px 0;
+}
+.widget-container .text-widget {
+  display: inline-block;
+  padding: 10px;
+  width: 120px;
+  color: gray;
+  background: #EEEEEE;
+  border-radius: 3px;
+  margin: 5px;
+  position: relative;
+}
+.widget-container .text-widget a img.cert-img {
+  position: absolute;
+  top: -6px;
+  width: 38px;
+  right: 5px;
+}
+
+.cert {
+  border-left: solid 2px #9C27B0;
+}
+
+.conf {
+  border-left: solid 2px green;
+}
+
+.deb {
+  border-left: solid 2px orange;
+}
+
+/*******************************
+************ Contact ************/
+#contact .contact-form {
+  padding: 50px;
+}
+
+.input-group {
+  width: 100%;
+  margin: 20px 0;
+}
+.input-group span {
+  width: 40px;
+  border: 1px solid #607D8B;
+}
+
+.btn-novis {
+  width: 100px;
+  transition: 300ms;
+  box-shadow: 0 6px 17px 0px #607D8B;
+}
+
+.btn-novis:hover {
+  color: #607D8B;
+  background: white;
+  transform: scale(1.1);
+}
+
+/*******************************
+************ google map ************/
+#googleMap {
+  width: 100%;
+  height: 200px;
+}
+
+/*******************************
+*********** footer *************/
+footer {
+  background: #607D8B;
+}
+
+.social-links-container {
+  padding: 25px;
+}
+.social-links-container ul {
+  margin: 0;
+}
+.social-links-container ul .social-link {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 50%;
+  color: #607D8B;
+  background: white;
+  width: 25px;
+  height: 25px;
+  transition: 300ms;
+}
+.social-links-container ul .social-link:hover {
+  transform: scale(1.5);
+  background: #607D8B;
+  color: white;
+}
+
+/*# sourceMappingURL=global.css.map */
