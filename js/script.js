@@ -1,3 +1,15 @@
+******************************
+  **      1- loader          **
+ *****************************/
+
+$(window).on('load', function() { 
+    
+        $("#loader").fadeOut("slow");
+        $("#preloader").delay(500).fadeOut("slow");
+       
+      });
+
+
 $(document).ready(function(){
   $(".typed-element").typed({
 			strings: ["DEVELOPPEUR FRONT-END", "DEVELOPPEUR WEB","DEVELOPPEUR MOBILE"],
