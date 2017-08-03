@@ -284,6 +284,10 @@ hr.inter-section {
 /************\
    navigation
 \************/
+.nav-menu > ul {
+     z-index: 1000;
+     position: relative;
+}
 .nav-menu {
   padding: 25px;
 }
