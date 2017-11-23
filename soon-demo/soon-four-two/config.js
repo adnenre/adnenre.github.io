@@ -19,12 +19,12 @@ var background ={
              slides    :
 
                 [
-                  { src: 'https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                  { src: 'https://images.pexels.com/photos/147504/pexels-photo-147504.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                  { src: 'https://images.pexels.com/photos/196666/pexels-photo-196666.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                  { src: 'https://images.pexels.com/photos/196464/pexels-photo-196464.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                  { src: 'https://images.pexels.com/photos/71104/utah-mountain-biking-bike-biking-71104.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                  { src: 'https://images.pexels.com/photos/69731/pexels-photo-69731.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' }
+                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-2.jpeg' },
+                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-4.jpeg' },
+                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-1.jpeg' },
+                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-5.jpeg' },
+                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-3.jpeg' },
+                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-6.jpeg' }
 
                 ],
                 overlay:'assets/css/overlays/06.png'
@@ -33,7 +33,7 @@ var background ={
 
         image : {
 
-          image_url : "https://images.pexels.com/photos/196464/pexels-photo-196464.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+          image_url : "https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-7.jpeg"
 
         },
        
