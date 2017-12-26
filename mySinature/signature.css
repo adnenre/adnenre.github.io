@@ -1,0 +1,15 @@
+.follow{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	padding:2px 10px;
+	border-radius:4px;
+	text-decoration: none;
+	border: solid 1px #1da1f2;
+	color:#1da1f2;
+	transition:200ms;
+}
+.follow:hover{
+	background:#1da1f2;
+	color:white;
+}
