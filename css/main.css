@@ -1,4 +1,10 @@
+/*@import "abstracts/functions";*/
+/*@import "abstracts/mixins";*/
+/*@import "base/animation";*/
+/*@import "base/base";*/
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Playfair+Display+Cabin+Sketch");
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch");
+/*@import "base/utilities";*/
 .navigation__checkbox {
   display: none; }
 
@@ -81,6 +87,7 @@
 .navigation__link {
   display: inline-block;
   font-size: 1.5rem;
+  font-family: "Cabin Sketch", cursive, arial, sans-serif;
   font-weight: 300;
   padding: 1rem 2rem;
   text-transform: uppercase;
@@ -175,13 +182,15 @@
     top: 89vh;
     right: 2.5rem; } }
 
-/******************       font
-\******************/
-/******************        color
-\**************** */
+.succes > span {
+  font-size: 10rem;
+  color: #4CAF50; }
+
+/*@import "pages/home";*/
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -193,8 +202,6 @@ body {
 a, a:link, a:visited {
   text-decoration: none; }
 
-/******************        color
-\**************** */
 section {
   width: 100%; }
 
@@ -205,19 +212,10 @@ section {
   font-family: 'Cabin Sketch', cursive; }
 
 .intro-title {
-  font-family: "Fira Sans", Arial, sans-serif;
+  font-family: "Cabin Sketch", cursive, Arial, sans-serif;
   font-size: 37px;
   margin: 5px;
   color: #eaeaea; }
-
-.navbar-transparent {
-  background: transparent; }
-
-.navbar-transparent .navbar-toggle .icon-bar {
-  background-color: #6799a6; }
-
-.navbar-transparent .navbar-toggle {
-  border-color: #6799a6; }
 
 .color-primary {
   color: #6799a6; }
@@ -231,7 +229,7 @@ section {
 hr.inter-section {
   background: transparent url(image/row.png) repeat scroll 0 0;
   border-radius: 5px;
-  font-family: 'Cabin Sketch', cursive;
+  font-family: "Cabin Sketch", cursive, cursive;
   content: "";
   display: block;
   height: 10px;
@@ -242,7 +240,11 @@ hr.inter-section {
 #home {
   height: 91vh;
   background-attachment: scroll, scroll, fixed;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffffff00), to(#dce5e68f)), url("https://static.pexels.com/photos/758520/pexels-photo-758520.jpeg");
+  background-image: -webkit-linear-gradient(left top, #ffffff00, #dce5e68f), url("https://static.pexels.com/photos/758520/pexels-photo-758520.jpeg");
+  background-image: -o-linear-gradient(left top, #ffffff00, #dce5e68f), url("https://static.pexels.com/photos/758520/pexels-photo-758520.jpeg");
   background-image: linear-gradient(to right bottom, #ffffff00, #dce5e68f), url("https://static.pexels.com/photos/758520/pexels-photo-758520.jpeg");
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-position: top;
   background-repeat: no-repeat; }
@@ -271,7 +273,7 @@ hr.inter-section {
   color: #eaeaea; }
 
 #home .intro-container .typed-text {
-  font-family: 'Cabin Sketch', cursive;
+  font-family: "Cabin Sketch", cursive, cursive;
   position: absolute;
   bottom: -16px;
   text-align: center;
@@ -474,13 +476,24 @@ hr.inter-section {
 /*******************************
 *********** footer *************/
 footer {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#6799a6), to(#dce5e68f)), url("../images/background_image.jpeg");
+  background-image: -webkit-linear-gradient(left top, #6799a6, #dce5e68f), url("../images/background_image.jpeg");
+  background-image: -o-linear-gradient(left top, #6799a6, #dce5e68f), url("../images/background_image.jpeg");
   background-image: linear-gradient(to right bottom, #6799a6, #dce5e68f), url("../images/background_image.jpeg");
+  -webkit-clip-path: polygon(0 72%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 72%, 100% 0, 100% 100%, 0 100%);
   background-position: bottom;
   background-repeat: no-repeat;
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end; }
 
 .social-links-container {
