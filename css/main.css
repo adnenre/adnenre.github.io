@@ -182,9 +182,20 @@
     top: 89vh;
     right: 2.5rem; } }
 
-.succes > span {
-  font-size: 10rem;
-  color: #4CAF50; }
+.success {
+  text-align: center; }
+  .success span {
+    font-size: 10rem;
+    color: #4CAF50; }
+
+label.error {
+  background: #F44336;
+  padding-top: 4px;
+  color: white;
+  padding-left: 10px;
+  height: 25px;
+  margin-bottom: 1px;
+  width: 100%; }
 
 /*@import "pages/home";*/
 * {
