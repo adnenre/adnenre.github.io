@@ -16,9 +16,9 @@
 
         <!-- Stylesheet -->
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     
-    <link rel="stylesheet" href="scripts/c3/c3.css">
+    <link rel="stylesheet" href="assets/scripts/c3/c3.css">
 	
 </head>
 <body class="fluent-theme">
@@ -302,86 +302,13 @@
             </div>
          </div>
 	 </div> 
-     <script src="js/jquery.js"></script>
+     <script src="assets/js/jquery.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     <script src="scripts/d3/d3.min.js"></script>
-     <script src="scripts/c3/c3.js"></script>
-     <script src="pages/dashboard.js"></script>
-     <script type="text/javascript">
-
-
-
-        /*d3.csv('../csv/file.csv',function(data){
-            
-                console.log(data);
-               
-            
-        });*/
-
-        var color = 'rgba(255, 255, 255,0.4)';
-        var color_hover = 'rgba(0, 0, 0,0.4)';
-        var data = [100,75,50,25,5];
-        var data_bar_height=20,
-            data_scaleFactor = 5,
-            data_bar_width =100;
-
-       
-        /**
-           svg dimention
-        */
-         var svg_width=500;
-         var svg_height=150;
-         var svg_padding = 25;
-
-         var scale=d3.scaleLinear()
-                    .domain([d3.min(data),d3.max(data)])
-                    .range([50,svg_width-svg_padding*2]);
-
-         var chart = d3.select('.c-chart')
-                     .append('svg')
-                     .style('border','solid 1px '+color)
-                     .attr('width',svg_width)
-                     .attr('height',svg_height)  ;
-        
-        var bar = chart.selectAll('g')
-                       .data(data)
-                       .enter()
-                       .append('g')
-                       .attr('transform',function(d,i){
-                             return "translate(0," + i* data_bar_height +")";
-                       });
-
-            bar.append('rect')
-               .classed('c-chart__bar',1)
-              
-                .attr('width',5)
-               .attr('height', data_bar_height-2)
-               .transition()
-                   .ease(d3.easeElastic)
-                   .duration(2000)
-                   .delay(function(d,i){return i*300})
-                   .attr('width',function(d){
-                    return scale(d);
-                   });
-            
-            
-            bar.append('text')
-               .classed('c-chart__barText',1)
-              
-               
-               .attr('x',function(d){
-                 return (scale(d)+5);
-               })
-               .attr('y', data_bar_height -5)
-               .text(function(d){
-                   return d;
-               });
-        
-       
-
-     
-     </script>
-     <script src="js/script.js"></script>
-     <script src="js/namespace.js"></script>
+     <script src="assets/scripts/d3/d3.min.js"></script>
+     <script src="assets/scripts/c3/c3.js"></script>
+     <script src="assets/pages/dashboard.js"></script>
+    
+     <script src="assets/js/script.js"></script>
+     <script src="assets/js/namespace.js"></script>
 </body>
 </html>
