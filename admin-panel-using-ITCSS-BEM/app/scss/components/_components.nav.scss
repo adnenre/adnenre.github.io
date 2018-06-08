@@ -1,0 +1,17 @@
+.c-nav{}
+.c-nav__list{
+	
+}
+.c-nav__item{
+	display:inline-block;
+}
+.c-nav__link{   
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    line-height:50px;
+    color:white;
+    >.c_nav__link--icon{
+    	padding-right:5px;
+    }
+}

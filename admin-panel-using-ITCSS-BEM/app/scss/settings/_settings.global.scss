@@ -1,0 +1,252 @@
+
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+
+//
+// Set up global Dashboard's variables.
+//
+// Don't change it here, instead, copy settings from this file into your custom
+// settings' file to override Dashboard's default settings.
+//
+
+//
+// Table of Content:
+//
+// 1. Color System
+// 2. Typography
+// 3. Backgrounds
+// 4. Borders
+// 5. Icon Fonts
+// 6. Z-index System
+// 7. Spacing
+// 8. Breakpints
+//
+
+//
+// 1. Color System
+// ========================================================================== */
+//
+// Nature color
+$grape-light   :#ed5565 !default;
+$grape         :#dA4453 !default;
+$bitter-light  :#fc6e51 !default;
+$bitter        :#e9573f !default;
+$sun-light     :#ffce54 !default;
+$sun           :#f6bb42 !default;
+$grass-light   :#a0d468 !default;
+$grass         :#8cc152 !default;
+$mint-light    :#48cfad !default;
+$mint          :#37bc98 !default;
+$green-500     :#43a047 !default;
+$aqua-light    :#4fc1e9 !default;
+$aqua          :#3bafda !default;
+$jeans-light   :#5d9cec !default;
+$jeans         :#4a89dc !default;
+$lavandre-light:#ac92ec !default;
+$lavandre      :#AB47BC !default;
+$pink-light    :#ec87c0 !default;
+$pink          :#d770ad !default;
+$gray-10       :#f5f7fa !default;
+$gray-20       :#e6e9ed !default;
+$gray-30       :#ccd1d9 !default;
+$gray-40       :#aab2bd !default;
+$gray-50       :#656d78 !default;
+$gray-60       :#434A54 !default;
+$white         :#fff    !default;
+$white-100:rgba(255, 255, 255, 0.10) !default;
+$white-150:rgba(255, 255, 255, 0.15) !default;
+$white-200:rgba(255, 255, 255, 0.20) !default;
+$white-250:rgba(255, 255, 255, 0.25) !default;
+$white-300:rgba(255, 255, 255, 0.30) !default;
+$white-350:rgba(255, 255, 255, 0.35) !default;
+$white-400:rgba(255, 255, 255, 0.40) !default;
+$white-450:rgba(255, 255, 255, 0.45) !default;
+$white-500:rgba(255, 255, 255, 0.50) ;
+
+$primary:#42b5df;
+
+
+
+$default-color-100:$white-100;
+$default-color-150:$white-150;
+$default-color-200:$white-200;
+$default-color-250:$white-250;
+$default-color-300:$white-300;
+$default-color-350:$white-350;
+$default-color-400:$white-400;
+$default-color-450:$white-450;
+$default-color-500:$white-500;
+
+
+
+$default-color    :#ffffff;
+$primary-color    :#2b95fd;
+$secondary-color  :#AB47BC;
+$info-color       :#5bc0de;
+$success-color    :#99cc54;
+$warning-color    :#f0ad4e;
+$danger-color     :#d9534f;
+
+
+
+
+$bg-default-color:$white-200;
+
+$colors :( 
+	default  : $default-color-400,
+	primary  : $primary-color,
+	secondary: $secondary-color,
+	info     : $info-color,
+	success  : $success-color,
+	warning  : $warning-color,
+	danger   : $danger-color
+);
+$natural-colors: (
+    grape-light : $grape-light, 
+    grape       : $grape, 
+    bitter-light: $bitter-light,
+    bitter      : $bitter,
+    sun-light   : $sun-light,
+    sun         : $sun,
+    grass-light : $grass-light,
+    grass       : $grass,
+    mint-light  : $mint-light,
+    mint        : $mint,
+    aqua-light : $aqua-light,
+    aqua       : $aqua,
+    jeans-light: $jeans-light,
+    jeans      : $jeans,
+    pink-light : $pink-light,
+    pink       : $pink,
+    gray-light : $gray-30,
+    gray       : $gray-40,
+    dark-light : $gray-50,
+    dark       : $gray-60
+);
+
+$theme-colors:( 
+	default  : $default-color-400,
+	primary  : $primary-color,
+	secondary: $secondary-color,
+	info     : $info-color,
+	success  : $success-color,
+	warning  : $warning-color,
+	danger   : $danger-color,
+    grape-light : $grape-light, 
+    grape       : $grape, 
+    bitter-light: $bitter-light,
+    bitter      : $bitter,
+    sun-light   : $sun-light,
+    sun         : $sun,
+    grass-light : $grass-light,
+    grass       : $grass,
+    mint-light  : $mint-light,
+    mint        : $mint,
+    aqua-light : $aqua-light,
+    aqua       : $aqua,
+    jeans-light: $jeans-light,
+    jeans      : $jeans,
+    pink-light : $pink-light,
+    pink       : $pink,
+    gray-light : $gray-30,
+    gray       : $gray-40,
+    dark-light : $gray-50,
+    dark       : $gray-60
+);
+
+
+
+
+
+// 2. Typography
+// ========================================================================== */
+
+$base-font-family: 'Nunito', sans-serif !default;
+$base-font-size: 16px !default;
+
+
+// Headings
+$h1-font-size: rem(36px) !default;
+$h2-font-size: rem(28px) !default;
+$h3-font-size: rem(24px) !default;
+$h4-font-size: rem(20px) !default;
+$h5-font-size: rem(18px) !default;
+$h6-font-size: rem(16px) !default;
+
+// font size
+
+$font-size-xsmall: 0.8rem;
+$font-size-small : 0.9rem;
+$font-size-medium: 1rem;
+$font-size-large : 1.5rem;
+$font-size-xlarge: 2rem;
+
+
+
+//
+// 3. Backgrounds
+// ========================================================================== */
+$body-background-color: #EFF3F6 !default;
+$base-background-color: $white !default;
+
+
+
+//
+//4. border-radius
+//
+$base-border-radius:4px;
+$base-border-pill  :50px;
+
+
+
+
+
+//
+// 5. Icon Fonts
+// ========================================================================== */
+$base-icon-font: "FontAwesome" !default;
+
+
+//
+// 6. Z-index System
+// ========================================================================== */
+$z-index-100: 100 !default; // over content
+$z-index-200: 200 !default; // over control
+$z-index-300: 300 !default; // over page
+$z-index-400: 400 !default; // over screen
+$z-index-500: 500 !default; // over everything
+
+
+//
+// 7. Spacing
+// ========================================================================== */
+
+$s-xsmall: rem(10px);
+$s-small:  rem(15px);
+$s:        rem(25px);
+$s-large:  rem(50px);
+$s-xlarge: rem(100px);
+
+
+//
+// 8. Breakpoints
+// ========================================================================== */
+
+// Use these breakpoints with media-queries to create responsive website, these
+// numbers are based on Bootstrap's grid breakpoints
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$breakpoint-mobile:  576px;
+$breakpoint-tablet:  768px;
+$breakpoint-desktop: 992px;
+$breakpoint-wide:    1200px;
+
+
+
+

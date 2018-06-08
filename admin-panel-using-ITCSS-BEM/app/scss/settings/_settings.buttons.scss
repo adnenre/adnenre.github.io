@@ -1,0 +1,35 @@
+
+//button settings
+
+$button-border-radius:$base-border-radius;
+$button-border-pill:$base-border-pill;
+
+
+
+// BUTTON COLOR
+$btn-color:$default-color;
+// BUTTON BACKGROUND COLOR
+
+$bg-default-color-100:$default-color-100;
+$bg-default-color-200:$default-color-200;
+$bg-default-color-400:$default-color-400;
+$bg-primary-color:$primary-color;
+$bg-secondary-color:$secondary-color;
+$bg-info-color:$info-color;
+$bg-success-color:$success-color;
+$bg-warning-color:$warning-color;
+$bg-danger-color:$danger-color;
+
+
+$button-colors :( 
+default  : $default-color-400,
+primary  : $primary-color,
+secondary: $secondary-color,
+info     : $info-color,
+success  : $success-color,
+warning  : $warning-color,
+danger   : $danger-color,
+dark     : $gray-60
+);
+
+$button-natural-colors:$natural-colors;

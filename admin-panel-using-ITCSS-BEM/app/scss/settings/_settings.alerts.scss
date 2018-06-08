@@ -1,0 +1,42 @@
+$bg-color-danger:$grape;
+$bg-color-warning:$sun;
+$bg-color-success:$mint-light;
+
+$color-default-200:$white-200;
+$color-default:$white;
+$color-info:$gray-50;
+
+$color-danger:$grape;
+$color-warning:$sun;
+$color-success:$green-500;
+
+$alert-font-size: 1rem;
+
+$alert-border-size:5px;
+$alert-border-color:$default-color;
+
+//  ALERT PADDING
+$alert-padding-top:20px;
+$alert-paddding-right:0;
+$alert-padding-bottom:20px;
+$alert-padding-left:15px;
+
+
+
+$alert-padding:$alert-padding-top $alert-paddding-right $alert-padding-bottom $alert-padding-left ;
+$alert-background:rgba(#222,0.8);
+
+
+$alert-icon-margin-right: 10px ;
+
+$theme-colors :( 
+default  : $default-color-400,
+primary  : $primary-color,
+secondary: $secondary-color,
+info     : $info-color,
+success  : $mint,
+warning  : $warning-color,
+danger   : $danger-color
+);
+
+

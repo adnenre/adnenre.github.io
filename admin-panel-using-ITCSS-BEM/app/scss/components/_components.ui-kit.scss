@@ -1,0 +1,51 @@
+.c-image {}
+
+.c-image__avatar--small {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    ;
+    border: solid 5px $default-color-200;
+}
+
+.u-flex {
+    display: flex !important;
+}
+
+.u-inline-flex {
+    display: inline-flex !important;
+}
+
+.u-align-center {
+    align-items: center;
+}
+
+.c-relative {
+    position: relative;
+    overflow: hidden;
+}
+
+.c-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/01.jpg);
+    background-size: contain;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.border-left-white {
+    border-left: solid 1px white;
+}
+
+.o-ui__container {
+    padding: 25px;
+}
+
+.c-box {
+    display: block;
+}
+
+
+

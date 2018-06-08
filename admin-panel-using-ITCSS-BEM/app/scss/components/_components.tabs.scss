@@ -1,0 +1,88 @@
+/*======================================
+=            Component tabs            =
+======================================*/
+
+.c-tabs {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.c-tabs__header {
+    .btn-group {
+        display: flex;
+        .c-tabs__link {
+            border-bottom: solid 2px $white-200;
+            border-radius: 0;
+        }
+        .c-tabs__link.active {
+
+            border-bottom-color: white;
+        }
+    }
+}
+
+.c-tabs {
+
+    &.c-tabs--col-left {
+        display: flex;
+        .btn-group {
+        
+        .c-tabs__link {
+        	border:none;
+            border-right: solid 2px $white-200 !important;
+           
+        }
+        .c-tabs__link.active {
+
+            border:none  !important;
+            background:none;
+        }
+    }
+    }
+    &.c-tabs--col-right {
+        display: flex;
+        flex-direction: row-reverse;
+         .btn-group {
+        
+        .c-tabs__link {
+        	border:none;
+            border-left: solid 2px $white-200 !important ;
+           
+        }
+        .c-tabs__link.active {
+
+            border:none  !important;
+            background:none;
+        }
+    }
+    }
+    .c-tabs__header-row {
+
+        display: flex;
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            .c-tabs__link {
+                display: flex;
+                align-items: center;
+                flex: 1;
+            }
+        }
+    }
+}
+
+.c-tabs__container {
+    padding: 25px;
+    .c-tabs__content {
+        text-align:justify;
+        font-size:0.8rem;
+        &:not(.active) {
+            display: none;
+        }
+    }
+}
+
+
+
+/*=====  End of Component tabs  ======*/

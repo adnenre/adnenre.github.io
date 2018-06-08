@@ -1,0 +1,37 @@
+
+
+
+
+.u-border--flat{
+ border-radius:0;
+}
+
+.u-border--round-5{
+	border-radius:rem(5px);
+}
+
+.u-border--round-10{
+	border-radius:rem(10px);
+}
+.u-border--round-15{
+	border-radius:rem(15px);
+}
+.u-border--round-20{
+	border-radius:rem(20px);
+}
+
+
+.u-border--round{
+ border-radius:4px;
+ overflow: hidden;
+}
+
+.u-border--pill{
+	border-radius:50px;
+	overflow:hidden;
+}
+
+.u-border--circle{
+ border-radius:100%;
+ overflow: hidden;
+}

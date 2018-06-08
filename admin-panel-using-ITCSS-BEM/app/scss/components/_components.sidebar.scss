@@ -1,0 +1,217 @@
+/* ==========================================================================
+   #SIDEBAR
+   ========================================================================== */
+
+.c-sidebar {
+    
+    height: 100%;
+    //overflow-y: auto;
+    background: $sidebar-background-color;
+    box-shadow: $sidebar-box-shadow;
+    position: relative;
+    font-family: $base-font-family;
+    transition: 300ms;
+    min-height: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.c-sidebar__header{
+    position:fixed;
+    top:0;
+    width:inherit;
+    background:$white-200;
+    .c-sidebar__logo {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: center;
+}
+}
+.c-sidebar__body {
+    @include scrollbar;
+    overflow-y:auto;
+    margin-top:70px;
+    background: url(../images/bg.png);
+    background-size: cover;
+    height: calc( 100% - 110px );
+   
+}
+.c-sidebar__footer{
+    bottom:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    width:inherit;
+    height:40px;
+    background:$white-200;
+    
+    .c-sidebar__footer--icon{
+     text-align: center;
+    color: white;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+       
+    }
+}
+
+
+
+.c-sidebar__list {
+    list-style: none;
+
+    .c-sidebar__item {
+        margin-bottom: 1px;
+        list-style: none;
+        &.has-submenu>.c-sidebar__link::after {
+            /* [1] */
+            display: inline-block;
+            position: absolute;
+            top: 8px;
+            right: 30px;
+            color: $sidebar-submenu-color;
+            font-family: $base-icon-font;
+            content: "\f0d7"; // fa-caret-down
+            transition: 0.2s;
+        }
+
+        &.is-open {
+
+
+            >.c-sidebar__link::after {
+                transform: rotate(90deg);
+            }
+        }
+        .c-sidebar__link {
+            display: block;
+            line-height: 35px;
+            padding: 5px 0 5px 15px;
+            background: rgba(255, 255, 255, 0.12);
+            color: $white;
+            position: relative;
+            font-size: rem(14px);
+            border-left: solid 5px transparent;
+
+            &:before {
+                content: "";
+                display: block;
+                width: 0;
+                height: 100%;
+                background: $default-color-200;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: 300ms;
+                z-index: -1;
+                border-top-right-radius: rem(5px);
+                border-bottom-right-radius: rem(5px);
+            }
+            &:hover {
+                border-left: solid 5px $default-color;
+
+                &:before {
+
+                    width: 100%;
+                }
+            }
+            .c-sidebar__icon {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.c-sidebar__submenu {
+    /**
+     * Bootstrap classes used to show and hide sidebar submenu.
+     * This behaviour depends on collapse.js plugin.
+     */
+    &.collapse {
+        display: none;
+    }
+
+    &.collapse.in {
+        display: block;
+    }
+
+    &.collapsing {
+        position: relative;
+        height: 20px;
+        transition: height 0.3s;
+        overflow: hidden;
+    }
+    .submenu__item {
+
+        .submenu__link {
+            display: block;
+            color: $sidebar-submenu-link-color;
+            font-size: rem(12px);
+        }
+        padding: 0.5rem 1rem;
+        border-bottom: solid 1px $white-150;
+    }
+}
+
+.c-sidebar__icon {
+    width: 2rem;
+}
+.c-sidebar--max {
+    width: $sidebar-max-width;
+}
+.c-sidebar__toggle {
+    position: fixed;
+    bottom: 20px;
+    left: calc( #{$sidebar-max-width} + 20px );
+    color: #fff;
+    width: rem(25px);
+    height: rem(25px);
+    font-size: 0.5rem;
+    background: $white-150;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: solid 2px $white;
+    z-index:1000;
+    opacity:0.5;
+    transition:0.5s;
+    
+    &:hover {
+    
+        cursor: pointer;
+        opacity:1;
+        &:before {
+
+            border: solid 12px white;
+        }
+    }
+}
+
+
+
+
+.c-sidebar__toggle--min {
+    transform: rotate(180deg);
+    left: 70px;
+}
+
+
+
+.c-sidebar--min {
+    width: 60px;
+}
+
+.link--min {
+    display: none;
+}
+
+@media screen and (max-width:480px){
+    .c-sidebar{
+        width:60px;
+    }
+    .wrapper__content{
+        margin-left:60px;
+    }
+}

@@ -1,0 +1,35 @@
+.o-portlet{
+   border-radius:10px;
+   background:$white-100;
+   overflow:hidden;
+  
+ 
+ 
+}
+
+ .o-portlet__header{
+    
+    display:flex;
+     padding: 0 25px;
+    background:$white-200;
+    .o-portlet__header--title{
+     
+      line-height: 3rem;
+    }
+  }
+   .o-portlet__container{
+    padding:25px;
+    
+  }
+  .o-portlet__footer{
+    display:flex;
+    
+  }
+
+
+  .main__container {
+    padding: 20px;
+    border-radius: 10px;
+
+    background:$white-250;
+}

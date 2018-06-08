@@ -1,0 +1,24 @@
+$badge-margin:0;
+$badge-padding:1px 8px;
+$badge-border-radius:$base-border-radius;
+$badge-font-size:$font-size-xsmall;
+$badge-line-height:20px;
+$badge-color:$default-color;
+$badge-background-color:$bg-default-color;
+
+
+$badge-colors :( 
+default  : $default-color-400,
+primary  : $primary-color,
+secondary: $secondary-color,
+info     : $info-color,
+success  : $success-color,
+warning  : $warning-color,
+danger   : $danger-color
+);
+
+
+$badge-natural-colors:$natural-colors;
+
+
+/*=====  End of Badge color  ======*/

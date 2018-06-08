@@ -1,0 +1,207 @@
+.c-button {
+    display: inline-block;
+    position: relative;
+    border: none;
+    color: $btn-color;
+    border-radius: $button-border-radius;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 12px 16px;
+    font-size: 0.6rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+
+        &:hover {
+        -webkit-box-shadow: 0 1px 0 rgba(#000, 0.1);
+        box-shadow        : 0 1px 0 rgba(#000, 0.1);
+        }
+        
+        &:active {
+        -webkit-box-shadow: inset 0 1px 0 rgba(#000, 0.1);
+        box-shadow        : inset 0 1px 0 rgba(#000, 0.1);
+        }
+        
+        &:focus {
+        outline           : 0;
+        }
+        &::-moz-focus-inner {
+        border: 0;
+        }
+}
+
+
+
+.c-button--fullwidth {
+    display:block;
+    width: 100%;
+}
+
+
+/*button size*/
+
+.c-button--xsmall {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.6rem;
+}
+
+.c-button--small {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+}
+
+.c-button--medium {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+}
+
+.c-button--large {
+    font-weight: normal;
+    padding: 1.1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.c-button--xlarge {
+    font-weight: normal;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+}
+
+.c-button--icon {
+    padding: 0 0;
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+}
+
+
+
+.c-button--disabled {
+    cursor: not-allowed;
+    background: $bg-default-color-400;
+    color: rgba(#000, 0.2);
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+
+
+.u-bg-gradient--default {
+    background: -webkit-linear-gradient(45deg, $default-color-400, $default-color-200);
+    background: -o-linear-gradient(45deg, $default-color-400, $default-color-200);
+    background: linear-gradient(45deg, $default-color-400, $default-color-200);
+}
+
+.u-bg-gradient--info {
+    background: -webkit-linear-gradient(45deg, #ccd1d9, rgba(204, 209, 217, 0.3));
+    background: -o-linear-gradient(45deg, #ccd1d9, rgba(204, 209, 217, 0.3));
+    background: linear-gradient(45deg, #ccd1d9, rgba(204, 209, 217, 0.3));
+}
+
+.u-bg-gradient--primary {
+    background: -webkit-linear-gradient(45deg, #3bafda, rgba(59, 175, 218, 0.3));
+    background: -o-linear-gradient(45deg, #3bafda, rgba(59, 175, 218, 0.3));
+    background: linear-gradient(45deg, #3bafda, rgba(59, 175, 218, 0.3));
+}
+
+.u-bg-gradient--secondary {
+    background: linear-gradient(45deg, #9C27B0 20%, #3F51B5 88%);
+
+    &:hover {
+        box-shadow: 0 4px 20px 0 rgb(114, 58, 178);
+    }
+}
+
+.u-bg-gradient--success {
+    background: -webkit-linear-gradient(45deg, #48cfad, #76b218);
+   
+}
+
+.u-bg-gradient--warning {
+    
+    background: linear-gradient(45deg, #FFEB3B, #FF5722);
+}
+
+.u-bg-gradient--danger {
+    background: -webkit-linear-gradient(45deg, #F44336, #ff000069);
+    background: -o-linear-gradient(45deg, #F44336, #ff000069);
+    background: linear-gradient(45deg, #F44336, #ff000069);
+}
+/*====================================
+=            BUTTON COLOR            =
+====================================*/
+
+
+
+@each $color, $value in $button-colors {
+ 
+    .c-button--#{$color} {
+        background-color:$value;
+        &:hover{
+           background-color:transparent($value,10%);
+           
+
+        }
+        &:focus{
+           background-color:transparent($value,20%);
+        }
+    }
+
+}
+
+/* Button naturatl color */
+
+@each $color, $value in $button-natural-colors {
+    .c-button--#{$color} {
+        background-color: $value;
+        &:hover{
+           background-color:transparent($value,10%);
+        }
+         &:focus{
+           background-color:transparent($value,20%);
+        }
+    }
+
+
+}
+
+// BUTTON OUTLINE
+@each $color, $value in $button-colors {
+ 
+  
+    .c-button--outline-#{$color} {
+
+        background: none;
+        border: solid 1px $value;
+        color: $value;
+        
+        
+    }
+   
+   
+}
+
+/*=====  End of BUTTON COLOR  ======*/

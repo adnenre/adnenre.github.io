@@ -1,0 +1,231 @@
+.c-input{
+   
+    border-radius:$base-border-radius;
+    border:none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0.8rem ;
+    transition: all 0.5s;
+   
+    outline:none;
+    color: $white; 
+    font-size: 0.7rem;
+    font-weight: 400;
+    
+    
+   
+    background-color: $white-100;
+    transition: 0.5s;
+    
+    &:focus{
+     	background-image: linear-gradient($white-200, $white-200);
+        background-size: 100% 1px, 100% 1px;
+    }
+    &.has-label{
+    	
+	    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: transparent;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: transparent;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: transparent;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: transparent;
+		}
+    }
+    
+   
+}
+
+.c-input--secondary{
+	    &:focus{
+	    	border:solid 1px $secondary-color;
+	    }
+}
+.c-input--primary{
+	    &:focus{
+	    	border:solid 1px $primary-color;
+	    }
+}
+
+
+.c-input--success{
+	    &:focus{
+	    	border:solid 1px $mint;
+	    }
+}
+
+.c-input--warning{
+	    background-image: linear-gradient($sun, $sun);
+        background-size: 100% 1px, 100% 1px;
+}
+.c-input--danger{
+	    background-image: linear-gradient($grape, $grape);
+        background-size: 100% 1px, 100% 1px;
+}
+
+.c-input__icon{
+	    color: $white;
+    padding: 4px 10px;
+    line-height: 25px;
+    display: block;
+     min-width: 35px;
+    text-align: center;
+    background: $white-200;
+   
+}
+
+.c-input__label{
+
+    color: $white;	
+	font-size: 0.6rem;	
+	position: absolute;	
+	bottom: 10px;	
+	left: 10px;	
+	transition:0.3s;
+
+	&.is-focused{
+
+		bottom:20px;
+		font-size:0.5rem;
+		color:$white-200;
+
+		}
+} 
+
+.c-input__group{
+
+    position:relative;
+    display:flex;
+	margin-bottom:10px;
+
+    .c-input{
+
+		padding: 0.7rem 0.5rem 0.3rem;
+	}	   
+	
+	&.has-addon-left,&.has-addon-bothside{
+        
+		.c-input__label{
+
+		  	left:42px;
+
+		  		&:is-focused{
+
+		   			 left:42px;
+
+		  		}
+		}
+		.c-input__icon{
+            border-radius: 4px 0 0 4px;
+		}
+		.c-input{
+			 border-radius: 0 4px 4px 0;
+			 border-left:none;
+		}
+		
+	}	
+	&.has-addon-right{
+
+        .c-input__icon{
+
+            border-radius: 0 4px 4px 0;
+        
+		}
+		.c-input{
+			 border-radius: 4px 0 0 4px;
+		}
+
+	}
+	&.has-addon-bothside{
+
+        .c-input__icon:first-child{
+
+            border-radius: 4px 0 0 4px ;
+        
+		}
+		 .c-input__icon:last-child{
+
+            border-radius: 0 4px 4px 0;
+        
+		}
+		.c-input{
+			 border-radius: 0;
+			 border-left:none;
+			 border-right:none;
+		}
+	}
+		
+}
+
+
+
+
+.c-input__toggle--pass{
+	cursor:pointer;
+}
+/*===================================
+=            INPUT COLOR            =
+===================================*/
+// DEFAULT COLOR
+$colors :( 
+default  : $default-color-400,
+primary  : $primary-color,
+secondary: $secondary-color,
+info     : $info-color,
+success  : $success-color,
+warning  : $warning-color,
+danger   : $danger-color
+);
+
+ //natural button 
+$natural-colors: (
+    grape-light : $grape-light, 
+    grape       : $grape, 
+    bitter-light: $bitter-light,
+    bitter      : $bitter,
+    sun-light   : $sun-light,
+    sun         : $sun,
+    grass-light : $grass-light,
+    grass       : $grass,
+    mint-light  : $mint-light,
+    mint        : $mint,
+    aqua-light  : $aqua-light,
+    aqua        : $aqua,
+    jeans-light : $jeans-light,
+    jeans       : $jeans,
+    pink-light  : $pink-light,
+    pink        : $pink,
+    gray-light  : $gray-30,
+    gray        : $gray-40,
+    dark-light  : $gray-50,
+    dark: $gray-60
+    );
+
+
+
+
+
+@each $color, $value in $colors {
+
+    .c-input__group--#{$color} {
+        .c-input__label {
+            color: $value;
+        }
+
+        .c-input__icon {
+            background: $value;
+        }
+    }
+        
+    
+}
+
+
+/*=====  End of INPUT COLOR  ======*/
+
+

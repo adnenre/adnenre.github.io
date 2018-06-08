@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Novis Panel</title>
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Font -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="fluent-theme">
+    <!-- header -->
+    <header class="navbar  u-mb-large">
+        <div class="navbar__container u-bg--transparent">
+            <div class="navbar__content-left">
+                <a href="#" class="navbar__link link__color-white"> UI Components</a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="o-portlet u-mt-m">
+                    <div class="o-portlet__header  justify-content-around">
+                        <h5 class="o-portlet__header--title">TABLE - BASIC TABLE</h5>
+
+                    </div>
+                    <div class="o-portlet__container">
+                        <!-- table-->
+                        <table id="default_table" class="c-table c-table--default">
+
+                            <thead class="c-table__head">
+                                <tr class="c-table__row c-table__row--heading">
+                                    <th class="c-table__cell">#</th>
+                                    <th class="c-table__cell">FIRST NAME</th>
+                                    <th class="c-table__cell">LAST NAME</th>
+                                    <th class="c-table__cell">USER NAME</th>
+                                </tr>
+                            </thead>
+                            <tbody class="c-table__body">
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">1</td>
+                                    <td class="c-table__cell ">Mira</td>
+                                    <td class="c-table__cell ">thor</td>
+                                    <td class="c-table__cell ">@mir</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">2</td>
+                                    <td class="c-table__cell ">Larry</td>
+                                    <td class="c-table__cell ">Urkel</td>
+                                    <td class="c-table__cell ">@lar</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">3</td>
+                                    <td class="c-table__cell ">Jhon</td>
+                                    <td class="c-table__cell ">Doe</td>
+                                    <td class="c-table__cell ">@Doe</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">4</td>
+                                    <td class="c-table__cell ">Adnen</td>
+                                    <td class="c-table__cell ">adnre</td>
+                                    <td class="c-table__cell ">@adnre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="o-portlet u-mt-m">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title">TABLE - HOVER TABLE</h5>
+                    </div>
+                    <div class="o-portlet__container">
+                        <!-- table-->
+                        <table class="c-table c-table--default-hovered ">
+
+                            <thead class="c-table__head">
+                                <tr class="c-table__row c-table__row--heading">
+                                    <th class="c-table__cell">#</th>
+                                    <th class="c-table__cell">FIRST NAME</th>
+                                    <th class="c-table__cell">LAST NAME</th>
+                                    <th class="c-table__cell">USER NAME</th>
+                                </tr>
+                            </thead>
+                            <tbody class="c-table__body">
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">1</td>
+                                    <td class="c-table__cell ">Mira</td>
+                                    <td class="c-table__cell ">thor</td>
+                                    <td class="c-table__cell ">@mir</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white" >
+                                    <td class="c-table__cell ">2</td>
+                                    <td class="c-table__cell ">Larry</td>
+                                    <td class="c-table__cell ">Urkel</td>
+                                    <td class="c-table__cell ">@lar</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">3</td>
+                                    <td class="c-table__cell ">Jhon</td>
+                                    <td class="c-table__cell ">Doe</td>
+                                    <td class="c-table__cell ">@Doe</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">4</td>
+                                    <td class="c-table__cell ">Adnen</td>
+                                    <td class="c-table__cell ">adnre</td>
+                                    <td class="c-table__cell ">@adnre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="o-portlet u-mt-m">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title">TABLE - BORDERED TABLE</h5>
+                    </div>
+                    <div class="o-portlet__container">
+                        <!-- table-->
+                        <table class="c-table c-table--default-bordered ">
+
+                            <thead class="c-table__head">
+                                <tr class="c-table__row c-table__row--heading">
+                                    <th class="c-table__cell">#</th>
+                                    <th class="c-table__cell">FIRST NAME</th>
+                                    <th class="c-table__cell">LAST NAME</th>
+                                    <th class="c-table__cell">USER NAME</th>
+                                </tr>
+                            </thead>
+                            <tbody class="c-table__body">
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">1</td>
+                                    <td class="c-table__cell ">Mira</td>
+                                    <td class="c-table__cell ">thor</td>
+                                    <td class="c-table__cell ">@mir</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white" >
+                                    <td class="c-table__cell ">2</td>
+                                    <td class="c-table__cell ">Larry</td>
+                                    <td class="c-table__cell ">Urkel</td>
+                                    <td class="c-table__cell ">@lar</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">3</td>
+                                    <td class="c-table__cell ">Jhon</td>
+                                    <td class="c-table__cell ">Doe</td>
+                                    <td class="c-table__cell ">@Doe</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">4</td>
+                                    <td class="c-table__cell ">Adnen</td>
+                                    <td class="c-table__cell ">adnre</td>
+                                    <td class="c-table__cell ">@adnre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="o-portlet u-mt-m">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title">TABLE - STRIPED TABLE</h5>
+                    </div>
+                    <div class="o-portlet__container">
+                        <!-- table-->
+                        <table class="c-table c-table--default-striped ">
+
+                            <thead class="c-table__head">
+                                <tr class="c-table__row c-table__row--heading">
+                                    <th class="c-table__cell">#</th>
+                                    <th class="c-table__cell">FIRST NAME</th>
+                                    <th class="c-table__cell">LAST NAME</th>
+                                    <th class="c-table__cell">USER NAME</th>
+                                </tr>
+                            </thead>
+                            <tbody class="c-table__body">
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">1</td>
+                                    <td class="c-table__cell ">Mira</td>
+                                    <td class="c-table__cell ">thor</td>
+                                    <td class="c-table__cell ">@mir</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white" >
+                                    <td class="c-table__cell ">2</td>
+                                    <td class="c-table__cell ">Larry</td>
+                                    <td class="c-table__cell ">Urkel</td>
+                                    <td class="c-table__cell ">@lar</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">3</td>
+                                    <td class="c-table__cell ">Jhon</td>
+                                    <td class="c-table__cell ">Doe</td>
+                                    <td class="c-table__cell ">@Doe</td>
+                                </tr>
+                                <tr class="c-table__row u-color--white">
+                                    <td class="c-table__cell ">4</td>
+                                    <td class="c-table__cell ">Adnen</td>
+                                    <td class="c-table__cell ">adnre</td>
+                                    <td class="c-table__cell ">@adnre</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+
+
+    <script src="js/script.js"></script>
+    <script src="pages/table.js"></script>
+</body>
+
+</html>

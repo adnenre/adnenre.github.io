@@ -1,0 +1,109 @@
+/* ==========================================================================
+   #SPACING UTILITIES
+   ========================================================================== */
+
+
+
+/**
+ * Spacing utilities are used to provide spacing between components using 
+ * margins or inside the components using paddings. Different sizes allow you 
+ * to easily construct consistent layouts of components.
+ */
+
+$spacers: (
+	au: auto,
+	xs: $s-xsmall,
+	s:  $s-small,
+	m:  $s,
+	l:  $s-large,
+	xl: $s-xlarge
+);
+
+/**
+ * Margins
+ *
+ * m  -> all sides
+ * mt -> margin-top
+ * mr -> margin-right 
+ * mb -> margin-bottom
+ * ml -> margin-left
+ * mv -> margin-top & margin-bottom (vertically)
+ * mh -> margin-right & margin-left (horizontaly)
+ *
+ * Paddings
+ *
+ * p  -> all sides
+ * pt -> padding-top
+ * pr -> padding-right 
+ * pb -> padding-bottom
+ * pl -> padding-left
+ * pv -> padding-top & padding-bottom (vertically)
+ * ph -> padding-right & padding-left (horizontaly)
+ *
+ */
+@each $property, $value in $spacers {
+	.u-m-#{$property} {
+		margin: $value !important;
+	}
+
+	.u-mt-#{$property} {
+		margin-top: $value !important;
+	}
+
+	.u-mr-#{$property} {
+		margin-right: $value !important;
+	}
+
+	.u-mb-#{$property} {
+		margin-bottom: $value !important;
+	}
+
+	.u-ml-#{$property} {
+		margin-left: $value !important;
+	}
+
+	.u-mv-#{$property} {
+		margin-top: $value !important;
+		margin-bottom: $value !important;
+	}
+
+	.u-mh-#{$property} {
+		margin-right: $value !important;
+		margin-left: $value !important;
+	}
+}
+
+
+
+
+@each $property, $value in $spacers {
+	.u-p-#{$property} {
+		padding: $value !important;
+	}
+
+	.u-pt-#{$property} {
+		padding-top: $value !important;
+	}
+
+	.u-pr-#{$property} {
+		padding-right: $value !important;
+	}
+
+	.u-pb-#{$property} {
+		padding-bottom: $value !important;
+	}
+
+	.u-pl-#{$property} {
+		padding-left: $value !important;
+	}
+
+	.u-pv-#{$property} {
+		padding-top: $value !important;
+		padding-bottom: $value !important;
+	}
+
+	.u-ph-#{$property} {
+		padding-right: $value !important;
+		padding-left: $value !important;
+	}
+}

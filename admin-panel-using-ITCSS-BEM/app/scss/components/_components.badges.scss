@@ -1,0 +1,52 @@
+/*=============================
+=            BADGE            =
+=============================*/
+
+
+/* - 1 - empty badge removed automaticallly */
+
+.c-badge {
+	display      :inline-block;
+	margin       :$badge-margin;
+	padding      :$badge-padding;
+	border-radius:$badge-border-radius;
+	font-size    :$badge-font-size;
+	line-height  :$badge-line-height;
+	color        :$badge-color;
+	background   :$badge-background-color;
+
+   &:empty {                                /*1*/
+    display: none;
+  }
+}
+
+
+
+/*===================================
+=            Badge color            =
+===================================*/
+
+// DEFAULT COLOR
+
+
+
+@each $color, $value in $badge-colors {
+    .c-badge--#{$color} {
+        background-color: $value;
+    }
+    .c-badge--outline-#{$color} {
+        color: $value;
+        border: solid 1px $value;
+        background: transparent;
+    }
+}
+@each $color, $value in $badge-natural-colors {
+    .c-badge--#{$color} {
+        background-color: $value;
+    }
+    .c-badge--outline-#{$color} {
+        color: $value;
+        border: solid 1px $value;
+        background: transparent;
+    }
+}

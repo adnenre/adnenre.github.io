@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Novis Panel</title>
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Font -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Load c3.css -->
+    <link rel="stylesheet" href="scripts/c3/c3.css">
+</head>
+
+<body class="fluent-theme">
+    <!-- header -->
+    <header class="navbar  u-mb-large">
+        <div class="navbar__container u-bg--transparent">
+            <div class="navbar__content-left">
+                <a href="#" class="navbar__link link__color-white"> UI Components</a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="o-portlet u-mb-s  ">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title">CHART - c3</h5>
+                    </div>
+                    <div class="o-portlet__container">
+
+                        <!-- c3 stacked chart -->
+                        <div id="stackedChart"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="o-portlet u-mb-s  ">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title">CHART - c3</h5>
+                    </div>
+                    <div class="o-portlet__container">
+
+                        <!-- c3 bar chart -->
+                        <div id="barChart"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="o-portlet u-mb-s  ">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title">CHART - c3</h5>
+                    </div>
+                    <div class="o-portlet__container">
+
+                        <!-- c3 pie chart -->
+                        <div id="pieChart"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+    <!-- Load d3.js and c3.js -->
+    <script src="scripts/d3/d3.min.js" charset="utf-8"></script>
+    <script src="scripts/c3/c3.min.js"></script>
+    <!-- script c3 chart -->
+    <script src="pages/c3-charts.js"></script>
+</body>
+
+</html>

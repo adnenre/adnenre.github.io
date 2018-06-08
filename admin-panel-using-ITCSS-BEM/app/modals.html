@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Novis Panel</title>
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Font -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="fluent-theme">
+    <!-- header -->
+    <header class="navbar  u-mb-l">
+        <div class="navbar__container u-bg--transparent">
+            <div class="navbar__content-left">
+                <a href="#" class="navbar__link link__color-white"> Navbar</a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- content -->
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-12  u-mb-m">
+                <div class="o-portlet">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title"> Modal</h5>
+                    </div>
+                    <div class="o-portlet__container u-mb-m">
+                        <button type="button" class="c-button button--default " data-toggle="modal" data-target="#myModal">
+                            Simple Modal
+                        </button>
+                        <!-- Modal -->
+                        <div class="c-modal modal " id="myModal" aria-labelledby="myModal">
+                            <div class="  c-modal__container  c-modal--small  u-animation--top">
+                                <div class="c-modal__header">
+                                    <h5 class="c-modal__header--title">
+                                    <span class="u-mr-s"><i class="fa fa-info-circle"></i></span>
+                                     Modal title </h5>
+                                    <button class="c-button button--default c-close" data-dismiss="modal">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="c-modal__body u-p-m">
+                                    <p class=" u-color--white u-mb-s">You can use this modal anywhere in your website.</p>
+                                </div>
+                                <div class="c-modal__footer">
+                                  <button class="c-button button--fullwidth  button--primary  u-text-left u-border--flat" data-dismiss="modal">skip</button>
+                                            <button class="c-button button--fullwidth  button--danger  u-text-right u-border--flat" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Modal -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12  u-mb-m">
+                <div class="o-portlet">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title"> Modal type</h5>
+                    </div>
+                    <div class="o-portlet__container u-mb-m">
+                        <!--  BUTTON TRIGGER MODAL SUBSCRIBE-->
+                        <button type="button" class="c-button button--default " data-toggle="modal" data-target="#myModal-subscribe">
+                            Modal subscribe
+                        </button>
+                        <!-- MODAL SUBSCRIBE -->
+                        <div class="c-modal modal " id="myModal-subscribe" aria-labelledby="myModal-subscribe">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="  c-modal__container u-animation--top">
+                                            <div class="c-modal__header--img">
+                                                <img class="c-img" src="images/01.jpg" alt="">
+                                            </div>
+                                            <div class="c-modal__body u-p-m u-bg--white">
+                                                <h3 class="u-text-center u-color--gray-50 u-mb-m"> Subscribe to our News</h3>
+                                                <form action="">
+                                                <div class="c-input__group c-input__group--primary has-label has-addon-left ">
+                                                    <span class="c-input__icon  "><i class="fa fa-user"></i></span>
+                                                    <input class="c-input  u-bg--gray-20 u-color--gray-50 has-label" placeholder="Name" type="text">
+                                                </div>
+                                                <div class="c-input__group c-input__group--primary has-addon-left ">
+                                                    <span class="c-input__icon  "><i class="fa fa-envelope"></i></span>
+                                                    <input class="c-input u-bg--gray-20 u-color--gray-50 has-label" placeholder="Email" type="text">
+                                                </div>
+                                                <div class="o-field">
+                                                    <input id="checkbox-2" class="c-field--checkbox c-field--checkbox-primary " type="checkbox" name="checkbox">
+                                                    <label for="checkbox-2" class="c-field--label u-color--default"></label>
+                                                </div>
+                                                <p class="u-text-center"><span class="u-color--gray-50">I have read and agree to  <a href="#!"><small class="u-color--primary">the terms and conditions</small> </a>    </span></p>
+                                            </div>
+                                            <div class="c-modal__footer">
+                                                <button class="c-button button--primary  button--fullwidth u-border--flat " data-dismiss="modal">Subscribe to our newsletter</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MODAL SUBSCRIBE-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="o-portlet u-mb-m">
+                    <div class="o-portlet__header">
+                        <h5 class="o-portlet__header--title">animation</h5>
+                    </div>
+                    <div class="o-portlet__container">
+                        <div class="row justify-content-center u-mb-xs">
+                            <div class="col-auto ">
+                                <!--  BUTTON MODAL TOP -->
+                                <button type="button" class="c-button button--default " data-toggle="modal" data-target="#myModal-top">
+                                    <fa class="fa fa-caret-down"></fa>
+                                </button>
+                                <!-- MODAL TOP ANIMATION -->
+                                <div class="c-modal modal " id="myModal-top" aria-labelledby="myModal-top">
+                                    <div class="  c-modal__container  c-modal--small  u-animation--top">
+                                        <div class="c-modal__header">
+                                            <h5 class="c-modal__header--title">
+                                    <span class="u-mr-s"><i class="fa fa-info-circle"></i></span>
+                                     Top </h5>
+                                            <button class="c-button button--default c-close" data-dismiss="modal">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="c-modal__body u-p-m">
+                                            <p class=" u-color--white u-mb-s">You can use this modal anywhere in your website.</p>
+                                        </div>
+                                        <div class="c-modal__footer">
+                                            <button class="c-button button--fullwidth  button--primary  u-text-left u-border--flat" data-dismiss="modal">skip</button>
+                                            <button class="c-button button--fullwidth  button--danger  u-text-right u-border--flat" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL TOP -->
+                            </div>
+                        </div>
+                        <div class="row justify-content-center u-mb-xs">
+                            <div class="col-auto ">
+                                <!-- BUTTON TRIGGER MODAL LEFT -->
+                                <button type="button" class="c-button button--default " data-toggle="modal" data-target="#myModal-left">
+                                    <fa class="fa fa-caret-right"></fa>
+                                </button>
+                                <!-- MODAL LEFT -->
+                                <div class="c-modal modal " id="myModal-left" aria-labelledby="myModal-left">
+                                    <div class="  c-modal__container  c-modal--small  u-animation--left">
+                                        <div class="c-modal__header">
+                                            <h5 class="c-modal__header--title">
+                                    <span class="u-mr-s"><i class="fa fa-info-circle"></i></span>
+                                     left </h5>
+                                            <button class="c-button button--default c-close" data-dismiss="modal">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="c-modal__body u-p-m">
+                                            <p class=" u-color--white u-mb-s">You can use this modal anywhere in your website.</p>
+                                        </div>
+                                        <div class="c-modal__footer">
+                                            <button class="c-button button--fullwidth  button--primary  u-text-left u-border--flat" data-dismiss="modal">skip</button>
+                                            <button class="c-button button--fullwidth  button--danger  u-text-right u-border--flat" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL LEFT -->
+                                <!-- BUTTON TRIGGER MODAL ZOOM -->
+                                <button type="button" class="c-button button--default " data-toggle="modal" data-target="#myModal-center">
+                                    zoom
+                                </button>
+                                <!-- MODAL ANIMATION ZOOM -->
+                                <div class="c-modal modal " id="myModal-center" aria-labelledby="myModal-center">
+                                    <div class="  c-modal__container  c-modal--small  u-animation--zoom">
+                                        <div class="c-modal__header">
+                                            <h5 class="c-modal__header--title">
+                                    <span class="u-mr-s"><i class="fa fa-info-circle"></i></span>
+                                     Center</h5>
+                                            <button class="c-button button--default c-close" data-dismiss="modal">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="c-modal__body u-p-m">
+                                            <p class=" u-color--white u-mb-s">You can use this modal anywhere in your website.</p>
+                                        </div>
+                                        <div class="c-modal__footer">
+                                            <button class="c-button button--fullwidth  button--primary  u-text-left u-border--flat" data-dismiss="modal">skip</button>
+                                            <button class="c-button button--fullwidth  button--danger  u-text-right u-border--flat" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL ZOOM -->
+                                <!-- BUTTON TRIGGER MODAL RIGHT -->
+                                <button type="button" class="c-button button--default " data-toggle="modal" data-target="#myModal-right">
+                                    <fa class="fa fa-caret-left"></fa>
+                                </button>
+                                <!-- MODAL ANIMATION RIGHT -->
+                                <div class="c-modal modal " id="myModal-right" aria-labelledby="myModal-right">
+                                    <div class="  c-modal__container  c-modal--small  u-animation--right">
+                                        <div class="c-modal__header">
+                                            <h5 class="c-modal__header--title">
+                                    <span class="u-mr-s"><i class="fa fa-info-circle"></i></span>
+                                     Right </h5>
+                                            <button class="c-button button--default c-close" data-dismiss="modal">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="c-modal__body u-p-m">
+                                            <p class=" u-color--white u-mb-s">You can use this modal anywhere in your website.</p>
+                                        </div>
+                                        <div class="c-modal__footer">
+                                            <button class="c-button button--fullwidth  button--primary  u-text-left u-border--flat" data-dismiss="modal">skip</button>
+                                            <button class="c-button button--fullwidth  button--danger  u-text-right u-border--flat" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL RIGHT -->
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <!-- BUTTON TRIGGER MODAL ANIMATION BOTTOM -->
+                                <button type="button" class="c-button button--default " data-toggle="modal" data-target="#myModal-bottom">
+                                    <fa class="fa fa-caret-up"></fa>
+                                </button>
+                                <!-- MODAL ANIMATION BOTTOM -->
+                                <div class="c-modal modal " id="myModal-bottom" aria-labelledby="myModal-bottom">
+                                    <div class="  c-modal__container  c-modal--small  u-animation--bottom">
+                                        <div class="c-modal__header">
+                                            <h5 class="c-modal__header--title">
+                                    <span class="u-mr-s"><i class="fa fa-info-circle"></i></span>
+                                     Bottom</h5>
+                                            <button class="c-button button--default c-close" data-dismiss="modal">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                        <div class="c-modal__body u-p-m">
+                                            <p class=" u-color--white u-mb-s">You can use this modal anywhere in your website.</p>
+                                        </div>
+                                        <div class="c-modal__footer">
+                                            <button class="c-button button--fullwidth  button--primary  u-text-left u-border--flat" data-dismiss="modal">skip</button>
+                                            <button class="c-button button--fullwidth  button--danger  u-text-right u-border--flat" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL BOTTOM-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <div class="panel">
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

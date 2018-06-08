@@ -1,0 +1,43 @@
+
+
+
+
+$sizes:(
+
+xs : $font-size-xsmall,
+sm : $font-size-small,
+m  : $font-size-medium,
+l  : $font-size-large,
+xl : $font-size-xlarge
+);
+
+/**
+* sizes
+* 
+* xs : xsmall
+* sm : small
+* m  : medium
+* l  : large
+* xl : xlarge
+*
+*/
+
+@each $size , $value in $sizes{
+	.u-size--#{$size} {
+		font-size:$value;
+	}
+}
+
+.u-text-left{
+	text-align:left;
+}
+.u-text-right{
+	text-align:right;
+}
+.u-text-center{
+	text-align:center;
+}
+
+
+
+

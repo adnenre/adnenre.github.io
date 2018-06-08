@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Novis Panel</title>
+        <meta name="description" content="Dashboard">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Google Font -->
+       <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,600i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- Stylesheet -->
+
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" href="scripts/c3/c3.css">
+	
+</head>
+<body class="fluent-theme">
+    <!-- PRELOADER -->
+   <!---->  <div class="preloader">
+        <div class="loader">
+            <div class="loader__indicator"></div>
+            <div class="loader__text">Novis Panel ...</div>
+        </div>
+            </div>  
+	<div class="wrapper">
+     <!-- c-sidebar start -->
+    	<div class="c-sidebar c-sidebar--max">
+           
+                 <div class="c-sidebar__header">
+                        <div class="c-sidebar__logo">
+                            <h5>Novis Panel</h5>
+                        </div> 
+                 </div>
+                 <div class="c-sidebar__body">
+                     <div class="c-sidebar__menu" >
+            			<ul class="c-sidebar__list">
+            				<li class="c-sidebar__item">
+                                <a  class="c-sidebar__link" href="ui.html"><i class="fa fa-home c-c-sidebar__icon u-mr-s "></i><span class="link__text">Dashbord</span></a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a  class="c-sidebar__link" href="charts.html"><i class="fa fa fa-pie-chart c-c-sidebar__icon u-mr-s "></i><span class="link__text">Charts</span></a>
+                            </li >
+                            <li class="c-sidebar__item has-submenu ">
+                                <a  href="#c-sidebar-submenu" class="c-sidebar__link"  data-toggle="collapse" data-target="#c-sidebar__submenu"><i class="fa fa-laptop c-c-sidebar__icon u-mr-s "></i><span class="link__text">UI Element</span></a>
+
+                                <ul id="c-sidebar__submenu" class="c-sidebar__submenu collapse" >
+                                    <li class="submenu__item has-submenu">
+                                       <a  href="#c-sidebar-submenu-2" class="c-sidebar__link"  data-toggle="collapse" data-target="#c-sidebar__submenu-2">
+                                         <span class="link__text">Form elements</span></a>
+                                         <ul id="c-sidebar__submenu-2" class="c-sidebar__submenu collapse">
+                                             <li class="submenu__item"><a href="input.html" class="submenu__link">Input</a></li>
+                                             <li class="submenu__item"><a href="textarea.html" class="submenu__link">Textarea</a></li>
+                                         </ul>
+                                    </li>
+                                    <li class="submenu__item"><a href="cards.html" class="submenu__link">cards</a></li>
+                                    <li class="submenu__item"><a href="tabs.html" class="submenu__link">tabs</a></li>
+                                    <li class="submenu__item"><a href="checkbox.html" class="submenu__link">checkbox</a></li>
+                                    <li class="submenu__item"><a href="alerts.html" class="submenu__link">Alerts</a></li>
+
+                                    <li class="submenu__item"><a href="badges.html" class="submenu__link">Badges</a></li>
+                                    <li class="submenu__item"><a href="pagination.html" class="submenu__link">Pagination</a></li>
+                                    <li class="submenu__item"><a href="navbar.html" class="submenu__link">Navbar</a></li>
+                                    <li class="submenu__item"><a href="notification.html" class="submenu__link">Notification</a></li>
+                                    <li class="submenu__item"><a href="breadcrumb.html" class="submenu__link">Breadcrumb</a></li>
+                                    <li class="submenu__item"><a href="button.html" class="submenu__link">Button</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">Button groups</a></li>
+                                    <li class="submenu__item"><a href="#" class="submenu__link">widgets</a></li>
+                                    <li class="submenu__item"><a href="modals.html" class="submenu__link">Modal</a></li>
+                                    <li class="submenu__item"><a href="social icon.html" class="submenu__link">Social Icon</a></li>
+                                </ul>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a  class="c-sidebar__link" href=""><i class="fa fa-edit c-c-sidebar__icon u-mr-s "></i><span class="link__text">Forms</span></a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a  class="c-sidebar__link" href="table.html"><i class="fa fa-table c-c-sidebar__icon u-mr-s "></i><span class="link__text">Tables</span></a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a  class="c-sidebar__link" href=""><i class="fa fa-calendar c-c-sidebar__icon u-mr-s "></i><span class="link__text">Calendar</span></a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a  class="c-sidebar__link" href=""><i class="fa fa-envelope c-c-sidebar__icon u-mr-s "></i><span class="link__text">Mailbox</span></a>
+                            </li>
+                            <li class="c-sidebar__item has-submenu">
+                                
+                                <a  href="#c-sidebar-submenu-example" class="c-sidebar__link"  data-toggle="collapse" data-target="#c-sidebar__submenu-example"><i class="fa fa-laptop c-c-sidebar__icon u-mr-s "></i><span class="link__text">Exemple</span></a>
+                                <ul id="c-sidebar__submenu-example" class="c-sidebar__submenu collapse" >
+                                    <li class="submenu__item"><a href="/login.html" class="submenu__link">login</a></li>
+                                
+                                </ul>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a  class="c-sidebar__link"  href=""><i class="fa fa-book c-c-sidebar__icon u-mr-s "></i><span class="link__text">Documentation</span></a>
+                            </li>
+            			</ul>
+                       
+            		 </div> 
+                 </div>
+                 <div class="c-sidebar__footer">
+                    <a class="c-sidebar__footer--icon" href="#!"> <i class="fa fa-cog"></i></a>
+
+                    <a class="c-sidebar__footer--icon u-toggle-fullScreen" href="#!"> <i class="fa fa-expand"></i></a>
+                    <a class="c-sidebar__footer--icon" href="#!"> <i class="fa fa-lock"></i></a>
+                    <a class="c-sidebar__footer--icon" href="#!"> <i class="fa fa-sign-out"></i></a>
+                 </div>
+    	   
+        </div>
+        <div class="c-sidebar__toggle u-bg--white-200">
+                    <span class="c-sidebar__toggle--button"><i class="fa fa-arrow-left"></i></span>
+        </div>
+
+     <!-- END SIDEBAR -->
+     <!-- mAIN -->
+    	<main class="wrapper__content wrapper--min">
+    		<header class="navbar u-bg--white-200">
+              <div class="navbar__container">
+                    <div class="navbar__content-right">
+                        <nav>
+                             <ul class="c-nav__list">
+                               <li class="c-nav__item">
+                                   <a href="#" class="c-notification">
+                                      <span class="c-notification__icon"><i class="fa fa-user-o"></i></span>
+                                      <span class="c-notification__number u-bg--sun">10</span>
+                                    </a>
+                               </li>
+                               <li class="c-nav__item"> 
+                                    <a href="#" class="c-notification">
+                                      <span class="c-notification__icon"><i class="fa fa-envelope-o"></i></span>
+                                      <span class="c-notification__number u-bg--sun">8</span>
+                                    </a>
+                              </li>
+                               <li class="c-nav__item">
+                                    <a href="#" class="c-nav__link c-panel__toggle">
+                                    <i class="fa fa-cog"></i>
+                                      </a>
+                               </li>
+                             </ul>
+                         </nav>    
+                    </div>
+              </div>
+           </header>
+            <div class="container-fluid">
+        <!--WIDGET  -->        
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget ">
+                            <div class="widget__container">
+                                
+                            
+                                <div class="widget__header widget__header--red" >
+                                    <i class="fa fa-money fa-3x"></i>
+                                </div>
+                                <div class="widget__content">
+                                    <p class="category">Income</p>
+                                    <h3 class="title">$98,800
+                                        <small></small>
+                                    </h3>
+                                </div>
+                                <div class="widget__footer">
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#" class="widget__link">Last transaction</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget">
+                            <div class="widget__container">
+                                <div class="widget__header widget__header--orange" >
+                                    <i class="fa fa-cloud-download fa-3x"></i>
+                                </div>
+                                <div class="widget__content">
+                                    <p class="category">Download</p>
+                                    <h3 class="title">25000
+                                        <small></small>
+                                    </h3>
+                                </div>
+                                <div class="widget__footer">
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#" class="widget__link">4 minutes ago</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget ">
+                                <div class="widget__container">
+                                    <div class="widget__header widget__header--blue">
+                                        <i class="fa fa-twitter fa-3x"></i>
+                                    </div>
+                                    <div class="widget__content">
+                                        <p class="category">Followers</p>
+                                        <h3 class="title">+27800
+                                            <small></small>
+                                        </h3>
+                                    </div>
+                                    <div class="widget__footer">
+                                        <div class="stats">
+                                            <i class="fa fa-clock-o"></i>
+                                            <a href="#" class="widget__link">Just Updated</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget ">
+                            <div class="widget__container">
+                                <div class="widget__header widget__header--green" >
+                                    <i class="fa fa-comments-o fa-3x"></i>
+                                </div>
+                                <div class="widget__content">
+                                    <p class="category">Comments</p>
+                                    <h3 class="title">3215
+                                        <small></small>
+                                    </h3>
+                                </div>
+                                <div class="widget__footer">
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i>
+                                        <a href="#" class="widget__link">Just Updated</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!--WIDGET  -->   
+        <!-- charts -->
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="o-portlet u-mt-m">
+                            <div class="o-portlet__header">
+                                <h5 class="o-portlet__header--title">chart</h5>
+                            </div>
+                            <div class="o-portlet__container">
+                                <!-- stacked chart -->
+                                <div id="stackedChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                
+                    <div class="col-sm-4">
+                        <div class="o-portlet u-mt-m">
+                            <div class="o-portlet__header">
+                                <h5 class="o-portlet__header--title">Bar chart</h5>
+                            </div>
+                            <div class="o-portlet__container">
+                                 <!-- bar chart -->
+                                <div id="barChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>    
+                
+
+
+            </div>
+    	</main>
+     <!-- // content end -->
+	 </div>
+
+     <!-- PANEL THEME-->
+	 <div class="c-panel">
+	 	 <div class="c-panel__header">
+             <h5>Theme customizer</h5>
+         </div>
+         <hr>
+        <div class="c-panel__body">
+            <div class="o-field ">
+                <input id="radio-panel-1" class="c-field--radio c-field--radio-primary " type="radio" name="radio" data-color="primary">
+                <label for="radio-panel-1" class="c-field--label u-color--primary">aqua</label>
+            </div>
+            <div class="o-field ">
+                <input id="radio-panel-2" class="c-field--radio c-field--radio-secondary " type="radio" name="radio" data-color="secondary">
+                <label for="radio-panel-2" class="c-field--label u-color--secondary">lavandre</label>
+            </div>
+            <div class="o-field ">
+                <input id="radio-panel-3" class="c-field--radio c-field--radio-mint " type="radio" name="radio" data-color="mint">
+                <label for="radio-panel-3" class="c-field--label u-color--mint">mint</label>
+            </div>
+            <div class="o-field ">
+                <input id="radio-panel-4" class="c-field--radio c-field--radio-bitter " type="radio" name="radio" data-color="bitter">
+                <label for="radio-panel-4" class="c-field--label u-color--bitter">bitter</label>
+            </div>
+             <div class="o-field ">
+                <input id="radio-panel-5" class="c-field--radio c-field--radio-dark " type="radio" name="radio" data-color="dark">
+                <label for="radio-panel-5" class="c-field--label u-color--dark">bitter</label>
+            </div>
+         </div>
+	 </div> 
+     <script src="js/jquery.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="scripts/d3/d3.min.js"></script>
+     <script src="scripts/c3/c3.js"></script>
+     <script src="pages/dashboard.js"></script>
+     <script type="text/javascript">
+
+
+
+        /*d3.csv('../csv/file.csv',function(data){
+            
+                console.log(data);
+               
+            
+        });*/
+
+        var color = 'rgba(255, 255, 255,0.4)';
+        var color_hover = 'rgba(0, 0, 0,0.4)';
+        var data = [100,75,50,25,5];
+        var data_bar_height=20,
+            data_scaleFactor = 5,
+            data_bar_width =100;
+
+       
+        /**
+           svg dimention
+        */
+         var svg_width=500;
+         var svg_height=150;
+         var svg_padding = 25;
+
+         var scale=d3.scaleLinear()
+                    .domain([d3.min(data),d3.max(data)])
+                    .range([50,svg_width-svg_padding*2]);
+
+         var chart = d3.select('.c-chart')
+                     .append('svg')
+                     .style('border','solid 1px '+color)
+                     .attr('width',svg_width)
+                     .attr('height',svg_height)  ;
+        
+        var bar = chart.selectAll('g')
+                       .data(data)
+                       .enter()
+                       .append('g')
+                       .attr('transform',function(d,i){
+                             return "translate(0," + i* data_bar_height +")";
+                       });
+
+            bar.append('rect')
+               .classed('c-chart__bar',1)
+              
+                .attr('width',5)
+               .attr('height', data_bar_height-2)
+               .transition()
+                   .ease(d3.easeElastic)
+                   .duration(2000)
+                   .delay(function(d,i){return i*300})
+                   .attr('width',function(d){
+                    return scale(d);
+                   });
+            
+            
+            bar.append('text')
+               .classed('c-chart__barText',1)
+              
+               
+               .attr('x',function(d){
+                 return (scale(d)+5);
+               })
+               .attr('y', data_bar_height -5)
+               .text(function(d){
+                   return d;
+               });
+        
+       
+
+     
+     </script>
+     <script src="js/script.js"></script>
+     <script src="js/namespace.js"></script>
+</body>
+</html>

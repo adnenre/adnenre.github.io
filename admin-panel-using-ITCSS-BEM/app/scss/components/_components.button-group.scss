@@ -1,0 +1,38 @@
+/*button group*/
+.btn-group,.btn-group--border-round{
+	display:-webkit-inline-box;
+	display:-webkit-inline-flex;
+	display:-ms-inline-flexbox;
+	display:inline-flex;
+}
+.btn-group > .c-button:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    border-left:none;
+    border-right:none;
+}
+.btn-group > .c-button:first-child{
+    border-right:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.btn-group > .c-button:last-child{
+	border-left:none;
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+// button group round
+
+.btn-group--border-round > .c-button:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    border-left:none;
+    border-right:none;
+}
+.btn-group--border-round > .c-button:first-child{
+    border-right:none;
+    border-radius:50px 0 0 50px;
+}
+.btn-group--border-round > .c-button:last-child{
+    border-left:none;
+    border-top-left-radius: 0;
+    border-radius:0 50px 50px 0;
+}

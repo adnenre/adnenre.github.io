@@ -1,0 +1,212 @@
+/* color*/
+
+
+.u-bg--white-100 {
+
+    background-color: $white-100;
+}
+.u-bg--white-150 {
+
+    background-color: $white-150;
+}
+
+.u-bg--white-200 {
+
+    background-color: $white-200;
+}
+.u-bg--white-250 {
+
+    background-color: $white-250;
+}
+
+.u-bg--white-300 {
+
+    background-color: $white-300;
+}
+
+.u-bg--white-350 {
+
+    background-color: $white-350;
+}
+
+.u-bg--white-400 {
+
+    background-color: $white-400;
+}
+
+
+
+// DEFAULT COLOR
+$colors :( 
+
+white       : $white,
+primary     : $primary-color,
+secondary   : $secondary-color,
+info        : $info-color,
+success     : $success-color,
+warning     : $warning-color,
+danger      : $danger-color,
+
+
+grape-light : $grape-light,   
+grape       : $grape, 
+bitter-light: $bitter-light,
+bitter      : $bitter,
+sun-light   : $sun-light,
+sun         : $sun,
+grass-light : $grass-light,
+grass       : $grass,
+mint-light  : $mint-light,
+mint        : $mint,
+aqua-light  : $aqua-light,
+aqua        : $aqua,
+jeans-light : $jeans-light,
+jeans       : $jeans,
+pink-light  : $pink-light,
+pink        : $pink,
+gray-light  : $gray-30,
+gray        : $gray-40,
+dark-light  : $gray-50,
+dark        : $gray-60
+    );
+@each $color, $value in $colors {
+
+    .u-color--#{$color} {
+        color: $value !important;
+        }
+    .u-bg--#{$color} {
+        background: $value !important;
+     }
+        
+}
+
+
+
+/*================================================
+=            Transparent color from 1 to 10            =
+================================================*/
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color,$percent){
+    @return mix(white,$color,$percent);
+}
+
+@for $i from 1 through 10{
+    .u-bg--primary-#{$i}{
+        background-color:tint($primary-color,$i * 10);
+    }
+    .u-bg--success-#{$i}{
+        background-color:tint($success-color,$i * 10);
+    }
+    .u-bg--warning-#{$i}{
+        background-color:tint($warning-color,$i * 10);
+    }
+    .u-bg--danger-#{$i}{
+        background-color:tint($danger-color,$i * 10);
+    }
+    .u-bg--secondary-#{$i}{
+        background-color:tint($secondary-color,$i * 10);
+    }
+}
+/*=====  End of Light color from 1 to 10  ======*/
+@each $color, $value in $colors {
+    .u-fill-#{$color}-t {
+        position: relative;
+        z-index: 0;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            z-index: -1;
+            transition: 0.3s;
+
+            background-color: $value;
+        }
+        &:hover {
+            color:$white;
+            border-color: $value;
+            &:before {
+                height: 100%;
+            }
+        }
+    }
+    .u-fill-#{$color}-r {
+        position: relative;
+        z-index: 0;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            z-index: -1;
+            transition: 0.3s;
+            
+            background-color: $value;
+        }
+        &:hover {
+            color:$white;
+            border-color: $value;
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+    .u-fill-#{$color}-b {
+        position: relative;
+        z-index: 0;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            z-index: -1;
+            transition: 0.3s;
+           
+            background-color: $value;
+        }
+        &:hover {
+            color:$white;
+            border-color: $value;
+            &:before {
+                height: 100%;
+            }
+        }
+    }
+    .u-fill-#{$color}-l {
+        position: relative;
+        z-index: 0;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            z-index: -1;
+            transition: 0.3s;
+
+            background-color: $value;
+        }
+        &:hover {
+            color:$white;
+            border-color: $value;
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+}

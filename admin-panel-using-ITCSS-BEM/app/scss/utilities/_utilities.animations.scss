@@ -1,0 +1,79 @@
+
+/**
+ *
+ * animation modal direction
+ *
+ */
+
+.u-animation--top{
+	position:relative;-webkit-animation:animatetop cubic-bezier(.175, .885, .32, 1.275) 0.5s;animation:animatetop cubic-bezier(.175, .885, .32, 1.275) 0.5s}
+	@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+	@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.u-animation--left{
+	position:relative;-webkit-animation:animateleft cubic-bezier(.175, .885, .32, 1.275) 0.5s;animation:animateleft cubic-bezier(.175, .885, .32, 1.275) 0.5s}
+	@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+	@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.u-animation--right{
+	position:relative;-webkit-animation:animateright cubic-bezier(.175, .885, .32, 1.275) 0.5s;animation:animateright cubic-bezier(.175, .885, .32, 1.275) 0.5s}
+	@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+	@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.u-animation--bottom{
+	position:relative;-webkit-animation:animatebottom cubic-bezier(.175, .885, .32, 1.275) 0.5s;animation:animatebottom cubic-bezier(.175, .885, .32, 1.275) 0.5s}
+	@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+	@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.u-animation--zoom {
+	-webkit-animation:animatezoom cubic-bezier(.175, .885, .32, 1.275) 0.5s;
+	        animation:animatezoom cubic-bezier(.175, .885, .32, 1.275) 0.5s}
+	@-webkit-keyframes animatezoom{from{-webkit-transform:scale(0);transform:scale(0)} to{-webkit-transform:scale(1);transform:scale(1)}}
+	@keyframes animatezoom{from{-webkit-transform:scale(0);transform:scale(0)} to{-webkit-transform:scale(1);transform:scale(1)}}
+/**
+ *
+ * animation pulse
+ *
+ */
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+    }
+}
+
+@keyframes smallPulse{
+    0%{
+    opacity:1;
+    -webkit-transform:scale(0);
+    transform:scale(0);
+   
+    }to{
+         
+        opacity:0;
+        -webkit-transform: scale(1);
+        transform: scale(1)}
+
+    }

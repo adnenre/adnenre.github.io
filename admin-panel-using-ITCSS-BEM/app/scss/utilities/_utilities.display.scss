@@ -1,0 +1,23 @@
+
+
+
+$display :(
+none        : none,
+inline      : inline,
+block       : block,
+inline-block:inline-block,
+flex        : flex,
+inline-flex : inline-flex,
+grid        :grid,
+inline-grid :inline-grid,
+table       :table,
+inline-table:inline-table
+
+);
+
+
+@each $key, $value in $display{
+	.u-#{$key}{
+		display:$value;
+	}
+}

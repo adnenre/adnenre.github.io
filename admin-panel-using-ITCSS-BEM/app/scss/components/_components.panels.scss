@@ -1,0 +1,21 @@
+.c-panel{
+	position:fixed;
+	right:-250px;
+	top:0;
+	height:100%;
+	width:250px;
+	
+	background:rgba(#222,0.9);
+	&.is-open{
+		right:0;
+	}
+	
+}
+.c-panel__header{
+padding:25px;
+}
+.c-panel__body{
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+}

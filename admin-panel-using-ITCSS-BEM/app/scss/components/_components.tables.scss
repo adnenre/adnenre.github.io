@@ -1,0 +1,104 @@
+.c-table{
+	display:table;
+	width:100%;
+	border-collapse:collapse;
+	
+	
+	&__title{
+		padding:25px 30px;
+		font-size:25px;
+	}
+	&__head{
+		font-size:12px;
+	}
+	
+	&__cell{
+		padding:10px ;
+		white-space:nowrap;
+        text-align:center;
+	}
+
+    &__row{
+
+		border-bottom:solid 1px $white-150;
+		
+		 
+		&__cell:nth-child(1){
+			background:$white-100;
+			
+			font-size:12px; 
+			text-align:center;
+		}
+	}  
+}
+
+@each $color, $value in $table-colors { 
+    .c-table--#{$color} {
+		
+		.c-table__head{
+			background-color:$value;
+		}
+		.c-table__row{
+
+			border-bottom:solid 1px $value;
+			
+		}  
+	}
+	.c-table--#{$color}-hovered {
+		
+		.c-table__head{
+			background-color:$value;
+		}
+		.c-table__body > .c-table__row{
+
+			border-bottom:solid 1px $value;
+			transition:300ms;
+			&:hover{
+				background:$value;
+				transform:scale(1.01);
+				
+		   }  
+			 
+		
+		}
+		 
+		
+	}
+	.c-table--#{$color}-bordered {
+		border:solid 1px $value;
+		.c-table__head{
+			background-color:$value;
+		}
+		.c-table__row > .c-table__cell{
+
+			border:solid 1px $value;
+			
+			 
+		
+		}
+		
+		
+	}
+	.c-table--#{$color}-striped {
+		border:solid 1px $value;
+		.c-table__head{
+			background-color:$value;
+		}
+		.c-table__body >.c-table__row {
+
+			border:solid 1px $value;
+			&:nth-child(2n){
+				background-color:$value;
+			}
+			 
+		
+		}
+		
+		
+	}
+
+	
+
+
+}
+

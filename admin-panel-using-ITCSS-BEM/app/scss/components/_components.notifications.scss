@@ -1,0 +1,22 @@
+.c-notification{
+	display:inline-block;
+	position:relative;
+	padding:0 10px ;
+	line-height: 50px;
+	.c-notification__icon{
+      color: $white;
+      font-size:15px;
+     
+	}
+	.c-notification__number{
+	   font-size: 12px;
+	   padding: 2px 5px;
+	   position: relative;
+	   right: 8px;
+	   top: -9px;
+	   color:white;
+	   -webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+	   border-radius: 8px;
+	}
+}

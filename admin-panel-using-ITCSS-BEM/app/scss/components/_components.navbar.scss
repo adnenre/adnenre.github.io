@@ -1,0 +1,38 @@
+.navbar {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: $navbar-height;
+	font-family: $base-font-family;
+
+}
+
+
+.navbar__container{
+	
+    display:flex;
+    height: inherit;
+    width:inherit;
+    padding: 0 rem(25px);
+    align-items:center;
+	.navbar__content-left{
+		 width: 100%;
+	    display: flex;
+		justify-content:flex-start;
+	}
+	.navbar__content-center{
+		 width: 100%;
+	    display: flex;
+		justify-content:center;
+	}
+	.navbar__content-right{
+		width: 100%;
+	    display: flex;
+		justify-content:flex-end;
+
+	}   
+}
+
+.navbar__link{
+	color:$navbar-link-color;
+}
