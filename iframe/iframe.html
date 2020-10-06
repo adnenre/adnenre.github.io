@@ -155,7 +155,7 @@
       // send docHeight onload
       function sendDocHeightMsg() {
         var ht = getDocHeight();
-        parent.postMessage(JSON.stringify({ docHeight: ht }), "http://localhost:8081");
+        parent.postMessage(JSON.stringify({ iframe_height: ht }), "http://localhost:8081");
       }
 
       // assign onload handler
