@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>iFrame</title>
+    <meta name="description" content="iFrame message passing test" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
+  <body>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but also
+    the leap into electronic typesetting, remaining essentially unchanged. It
+    was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software
+    like Aldus PageMaker including versions of Lorem Ipsum.
+    <br />
+    <br />
+    <img src="https://picsum.photos/600/200" />
+    <br />
+
+    <!-- <iframe
+      id="myiframe2"
+      src="iframe.html"
+      width="100%"
+      scrolling="no"
+      frameborder="0"
+	></iframe> -->
+    <div id="IFrame_container"></div>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.iframeResizer.min.js"
+    ></script>
+    <script type="text/javascript">
+      $("iframe").iFrameSizer({
+        log: true, // For development
+        autoResize: true, // Trigering resize on events in iFrame
+        contentWindowBodyMargin: 0, // Set the default browser body margin style (in px)
+        doHeight: true, // Calculates dynamic height
+        doWidth: false, // Calculates dynamic width
+        enablePublicMethods: true, // Enable methods within iframe hosted page
+        interval: 0, // interval in ms to recalculate body height, 0 to disable refreshing
+        scrolling: false, // Enable the scrollbars in the iFrame
+      });
+    </script> -->
+
+    <br />
+    <br />
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but also
+    the leap into electronic typesetting, remaining essentially unchanged. It
+    was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software
+    like Aldus PageMaker including versions of Lorem Ipsum.
+    <br />
+    <br />
+    <img src="https://picsum.photos/600/200" />
+    <br />
+    <script>
+      /*##########################################################*/
+      /*################ LOAD A RESPONSIVE IFRAME END ##############*/
+      /*##########################################################*/
+      /**
+       * @param {String}  html patth
+       * @param {Array}  allowed_doman ,
+       * arrary of doamin example
+       * www.domainOne.com
+       * www.domainTwo.com
+       * you need to put just ['domainOne','domainTwo']
+       */
+      function loadIframe(url, allowed_domain) {
+        if (allowed_domain.includes(window.location.hostname.split(".")[0])) {
+          var container = document.getElementById("IFrame_container");
+          var iframe = document.createElement("iframe");
+          iframe.src = url;
+          iframe.classList.add("responsive_iframe");
+          iframe.width = "100%";
+          iframe.scrolling = "no";
+          iframe.frameborder = "0";
+          iframe.onload = function () {
+            iframe.style.height =
+              iframe.contentWindow.document.body.scrollHeight + "px";
+            iframe.style.border = "none";
+          };
+          container.appendChild(iframe);
+        } else {
+          return;
+        }
+      }
+      /*################ keep the iframe responsive ##############*/
+      function resize() {
+        var ifr =
+          document.getElementById("IFrame_container").children[0] ||
+          document.getElementsByClassName("responsive_iframe")[0];
+        var height = ifr && ifr.contentWindow.document.body.scrollHeight + "px";
+        setTimeout(() => (ifr.style.height = height), 0);
+      }
+      /** relpace localhost with needed domain*/
+      loadIframe("iframe.html", ["husegmarketing","localhost"]);
+      window.onresize = resize;
+      /*##########################################################*/
+      /*################ LOAD A RESPONSIVE IFRAME END ##############*/
+      /*##########################################################*/
+    </script>
+  </body>
+</html>
