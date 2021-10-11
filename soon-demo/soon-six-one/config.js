@@ -33,7 +33,7 @@ var background ={
 
         image : {
 
-          image_url : "https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+          image_url : "https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-2.jpeg"
 
         },
        
@@ -71,7 +71,7 @@ var counter = {
 
            // SET YEAR : INTEGER
 
-          Year: 2021
+          Year: 2022
     }
 		
 	};

@@ -18,14 +18,15 @@ var background ={
 
              slides    :
 
-                [
-                { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-3.jpeg' },
-                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-1.jpeg' },
-                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-2.jpeg' },
-                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-4.jpegb' },
-                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-5.jpeg' },
-                  { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-6.jpeg' }
-                ],
+             [
+              { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-5.jpeg' },
+              { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-4.jpeg' },
+              { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-1.jpeg' },
+              { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-2.jpeg' },
+              { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-3.jpeg' },
+              { src: 'https://raw.githubusercontent.com/adnenre/adnenre.github.io/master/soon-demo/img/img-6.jpeg' }
+
+            ],
                 overlay:'assets/css/overlays/06.png'
 
              },
