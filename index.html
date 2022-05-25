@@ -1,871 +1,1368 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Lead Frontend developer React.js / Javascript / ES6 /JavaScript / D3.js / Node.js / React.js / SVG">
-  <meta name="keywords" content="HTML, CSS, JavaScript ,D3 , Node.js , React.js,SVG"> 
-  <meta name="author" content="adnen rebai ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Lead Frontend developer React.js / Javascript / ES6 /JavaScript / D3.js / Node.js / React.js / SVG"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript ,D3 , Node.js , React.js,SVG"
+    />
+    <meta name="author" content="adnen rebai " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- GOOGLE fONT -->
-    <link  href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="preload" >
-    <link rel="stylesheet" href="css/main.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700"
+      rel="preload"
+      as="font"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>My Portfolio</title>
     <style>
-        /* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #6194a1; 
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #6194a1; 
-  }
-    </style>
-</head>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
 
-<body>
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #6194a1;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6194a1;
+      }
+    </style>
+  </head>
+
+  <body>
     <div id="preloader">
-        <div id="loader"></div>
+      <div id="loader"></div>
     </div>
     <div class="content">
-        <nav class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon"></span>
-            </label>
-            <div class="navigation__background">
-            </div>
-            <div class="navigation__overlay"></div>
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Home</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#portfolio" class="navigation__link">Projects</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#competence" class="navigation__link">Skills</a>
-                    </li>
-                   
+      <nav class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon"></span>
+        </label>
+        <div class="navigation__background"></div>
+        <div class="navigation__overlay"></div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#portfolio" class="navigation__link">Projects</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#competence" class="navigation__link">Skills</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+      <section id="home" class="top intro">
+        <div class="intro-container">
+          <div class="intro-top">
+            <img
+              loading="lazy"
+              class="my-img"
+              src="images/adnen2.jpg"
+              alt=""
+              width="142"
+              height="142"
+            />
+          </div>
+          <div class="intro-text">
+            <h3 class="intro-title">Rebai Adnen</h3>
+          </div>
+          <div class="typed-text">
+            <h3 class="intro-subtitle typed-element">Front-end Developer</h3>
+          </div>
+        </div>
+      </section>
+      <!-- portfolio -->
+      <section id="portfolio" class="intro">
+        <div class="container">
+          <div class="intro-title">
+            <h3 class="text-center color-primary section-title">Projects</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-12 block">
+              <div class="filters text-center">
+                <ul class="nav nav-projects list-inline">
+                  <li>
+                    <a href="#" data-filter="*">All</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".design">Sass/Css3/BEM/ITCSS</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".app">Javascript</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".app">Typescript</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".bootstrap">Bootstrap 4</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".Angular">Angularjs/Angular</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".react">Reactjs</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".d3js">D3.js</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".svg">Svg</a>
+                  </li>
+                  <li>
+                    <a href="#" data-filter=".datavis">Data visualisation</a>
+                  </li>
                 </ul>
-            </nav>
-        
-        <section id="home" class="top intro">
-            <div class="intro-container">
-                <div class="intro-top">
-                    <img loading=lazy class="my-img" src="images/adnen2.jpg" alt="" width="142" height="142">
-                </div>
-                <div class="intro-text">
-                    <h3 class="intro-title">Rebai Adnen</h3>
-                </div>
-                <div class="typed-text">
-                    <h3 class="intro-subtitle typed-element">Front-end Developer </h3>
-                </div>
-            </div>
-        </section>
-        <!-- portfolio -->
-        <section id="portfolio" class="intro">
-            <div class="container">
-                <div class="intro-title">
-                    <h3 class="text-center color-primary section-title">Projects</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 block">
-                        <div class="filters text-center">
-                            <ul class="nav nav-projects list-inline">
-                                <li>
-                                    <a href="#" data-filter="*">All</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".design">Sass/Css3/BEM/ITCSS</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".app">Javascript</a>
-                                </li>
-                                  <li>
-                                    <a href="#" data-filter=".app">Typescript</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".bootstrap">Bootstrap 4</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".Angular">Angularjs/Angular</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".react">Reactjs</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".d3js">D3.js</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".svg">Svg</a>
-                                </li>
-                                <li>
-                                    <a href="#" data-filter=".datavis">Data visualisation</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="grid isotope-container ">
-                             <!-- trello clone using react & typescript -->
-                            <div class="col-sm-6 col-md-3 grid-item app react">
-                                <div class="image-box">
+              </div>
+              <div class="grid isotope-container">
+                <!-- trello clone using react & typescript -->
+                <div class="col-sm-6 col-md-3 grid-item app react">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/trello-clone.png"
+                      alt="Reactjs"
+                    />
 
-                                    <img loading=lazy class="image-box__img" src="images/trello-clone.png" alt="Reactjs">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Trello Clone (Reactjs)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/trello-react-typescript//">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- end trello clone using react & typescript -->
-                              <!-- messaging app  -->
-                            <div class="col-sm-6 col-md-3 grid-item app react">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/messaging-app.png" alt="Reactjs">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">messaging App(Reactjs & redux)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/messaging-app/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- Tunisia SVG map -->
-                             <div class="col-sm-6 col-md-3 grid-item app svg javascript Typescript react">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/map.png" alt="">
-                                  
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Meteorological map of Tunisia (svg, weather Api)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/tunisia_weather_map/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end Tunisia svg map -->
-                             <!-- React task managment  -->
-                             <div class="col-sm-6 col-md-3 grid-item app react">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/react-novice-button.png" alt="Reactjs">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Button module (Reactjs & styled components)</span>
-                                        <a class="image-box__link" href="hhttps://adnenre.github.io/react-novice-button/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                        <a class="image-box__link" href="https://github.com/adnenre/react-novice-button">
-                                            repo
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/novisdevAgency.png" alt="">
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Theme agency onepage (novisdev)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/novisdev%20theme%20multipurpose%20one%20page/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/soon.png" alt="">
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Coming soon template</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/soon-demo/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- bootstrap price table -->
-                            <div class="col-sm-6 col-md-3 grid-item bootstrap">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/priceTable.png" alt="">
-                                 
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Prices table</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/pricetable/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- admin panel theme using itcss & BEM METHODOLOGY -->
-                             <div class="col-sm-6 col-md-3 grid-item bootstrap">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/adminPanelPreview.jpg" alt="">
-                                   
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Admin panel theme using ITCSS/BEM (in progress)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- button itcss & BEM METHODOLOGY -->
-                            <div class="col-sm-6 col-md-3 grid-item design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/buttonPreVisit.jpg" alt="">
-                                   
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Button using ITCSS/BEM (in progress)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM/button.html">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- input itcss & BEM METHODOLOGY -->
-                            <div class="col-sm-6 col-md-3 grid-item design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/inputPreveiw.png" alt="">
-                                   
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">input filed using ITCSS/BEM (in progress)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM/input.html">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- web agency theme -->
-                            <div class="col-sm-6 col-md-3 grid-item design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/theme.png" alt="">
-                                   
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Theme web agency using (Bootstrap4)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/themeAgenceWeb/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item bootstrap">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/carousel.png" alt="">
-                                 
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Client carousel</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/carousel/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                             <!-- login page from admin panel BEM & ITCSS -->
-                             <div class="col-sm-6 col-md-3 grid-item design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/loginPage.png" alt="">
-                                   
-
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">login page using BEM and ITCSS (in progress)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM/login.html">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                            <!-- calculator -->
-                            <div class="col-sm-6 col-md-3 grid-item app">
-                                <div class="image-box">
-                                   
-                                        <img loading=lazy class="image-box__img" src="images/calc.png" alt="">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Calculator using javascript</span>
-                                        <a class="image-box__link" href="https://codepen.io/adnenrebai/full/GropqJ/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--wikipidia search-->
-                            <div class="col-sm-6 col-md-3 grid-item app">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/portfolio-4.jpg" alt="">
-                                   
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">small app wikipedia search </span>
-                                        <a class="image-box__link" href="https://codepen.io/adnenrebai/full/EmqxQL/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--loader collection-->
-                            <div class="col-sm-6 col-md-3 grid-item design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/loader.png" alt="">
-                                
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Collection of loaders Css3</span>
-                                        <a class="image-box__link" href="https://codepen.io/adnenrebai/full/YVmLQX/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                             <!--Clock-->
-                            <div class="col-sm-6 col-md-3 grid-item app">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/clock.png" alt="Led Clock">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Led clock using javascript</span>
-                                        <a class="image-box__link" href="https://codepen.io/adnenrebai/full/OpwpoM/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app Angular">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/myApp.png" alt="Angular2App">
-                                 
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Angular2 My Note</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/Angular2AppNote/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app Angular">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/gestioncontact.png" alt="gestionContact">
-                                 
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">demo App Manage my Contact Angularjs</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/gestionContact/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item svg design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/notfound404.png" alt="">
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">404 page using SVG</span>
-                                        <a class="image-box__link" href="https://codepen.io/adnenrebai/full/KNqQJP/">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app design">
-                                <div class="image-box">
-                                    <img loading=lazy class="image-box__img" src="images/portfolio-8.png" alt="">
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Coming soon template</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/soon-demo">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- comming soon template !-->
-                            <div class="col-sm-6 col-md-3 grid-item app design">
-                                <div class="image-box">
-                                    <img loading=lazy class="image-box__img" src="images/portfolio-9.png" alt="">
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Coming soon template</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/soon-demo">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- comming soon template !-->
-                            <div class="col-sm-6 col-md-3 grid-item app design">
-                                <div class="image-box">
-                                    <img loading=lazy class="image-box__img" src="images/portfolio-10.png" alt="">
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Coming soon template</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/soon-demo">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app design">
-                                <div class="image-box">
-                                    <img loading=lazy class="image-box__img" src="images/portfolio-11.png" alt="">
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Coming soon template</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/soon-demo">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app design">
-                                <div class="image-box">
-                                    <img loading=lazy class="image-box__img" src="images/portfolio-12.png" alt="">
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Coming soon template</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/soon-demo">
-                                            visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- React task managment  -->
-                            <div class="col-sm-6 col-md-3 grid-item app react">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/todoUI.png" alt="Reactjs">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Tasks Management (Reactjs)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/manage-task/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                          
-                            <!-- React Hacker news  -->
-                            <div class="col-sm-6 col-md-3 grid-item app react">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/HackerNews.png" alt="Reactjs">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Hacker news (Reactjs,GraphQl,Nodejs)</span>
-                                        <a class="image-box__link" href="https://wy8xz7o628.codesandbox.io/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- React Component  -->
-                            <div class="col-sm-6 col-md-3 grid-item app react">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/ReactComponent.jpg" alt="Reactjs">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Collection of REact Components (Reactjs)</span>
-                                        <a class="image-box__link" href="https://x3wz6j8ll4.codesandbox.io/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- React app vote  -->
-                            <div class="col-sm-6 col-md-3 grid-item app react">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/voteApp.png" alt="Reactjs">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Products votes (Reactjs)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/react-app-vote/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app d3js svg">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/ColorPicker.png" alt="">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">color picker using(d3.js)</span>
-                                        <a class="image-box__link" href="https://bl.ocks.org/adnenre/raw/8fae80314887a4554db99268c1d7041e/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app design">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/ColorPickerflex.png" alt="">
-                                   
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">choose your color palet (flexbox)</span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/colorpicker/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app design javascript">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/devTools.png" alt="">
-                                    
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">small Css gnerator</span>
-                                        <a class="image-box__link" href="https://codepen.io/adnenrebai/full/oeWmvj/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item app design css">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/slideshow.png" alt="">
-                                 
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">css3 slider</span>
-                                        <a class="image-box__link" href="https://codepen.io/adnenrebai/full/xLWQvN/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item svg d3js datavis">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/barChartV.png" alt="">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">chart using d3.js </span>
-                                        <a class="image-box__link" href="https://bl.ocks.org/adnenre datavis">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item design d3js datavis">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/barChartH.png" alt="">
-                                   
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">chart using d3.js </span>
-                                        <a class="image-box__link" href="https://bl.ocks.org/adnenre">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item design d3js datavis">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/c3Chart.png" alt="">
-                                   
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">chart using c3.js </span>
-                                        <a class="image-box__link" href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM/charts.html">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item svg d3js datavis">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/PieChart.png" alt="">
-                                    
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Pie chart using d3.js </span>
-                                        <a class="image-box__link" href="https://bl.ocks.org/adnenre">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-3 grid-item svg d3js datavis">
-                                <div class="image-box">
-
-                                    <img loading=lazy class="image-box__img" src="images/PieChart2.png" alt="">
-                                  
-                                    <div class="image-box__desc">
-                                        <span class="image-box__text">Chart graphique </span>
-                                        <a class="image-box__link" href="https://codepen.io/adnenrebai/full/xpdaLo/">
-                                            Visit
-                                            <i class=" icon fa fa-eye"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Trello Clone (Reactjs)</span
+                      >
+                      <a
+                        class="image-box__link"
+                        href="https://adnenre.github.io/trello-react-typescript//"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <!-- end section  -->
-        <hr class="inter-section">
-        <!-- start section -->
-        <section id="competence">
-            <div class="container">
-                <div class="intro-title">
-                    <h3 class="text-center color-primary section-title">Skills</h3>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="widget-container">
-                            <div class="text-widget block cert">
-                                <span> HTML5</span>
-                                <a rel="noopener" href="https://www.sololearn.com/Certificate/1014-3206090/pdf/">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            <div class="text-widget block cert">
-                                <span>CSS3</span>
-                                <a rel="noopener" href="https://www.sololearn.com/Certificate/1023-3206090/pdf/">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                          
-                            <div class="text-widget block cert">
-                                <span> javascript  </span>
-                                <a rel="noopener" href="https://www.freecodecamp.org/certification/adnen/javascript-algorithms-and-data-structures">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> JQuery</span>
-                                <a rel="noopener" href="https://www.sololearn.com/Certificate/1082-3206090/pdf/">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> Git </span>
-                                <a href="https://openclassrooms.com/course-certificates/4928245600">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> Reactjs</span>
-                                <a href="https://openclassrooms.com/course-certificates/3123304372">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> Responsive web Design</span>
-                                <a href=" https://www.freecodecamp.org/certification/adnen/responsive-web-design">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> javascript-algorithms-and-data-structures</span>
-                                <a href=" https://www.freecodecamp.org/certification/adnen/javascript-algorithms-and-data-structures">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            
-                            <div class="text-widget block cert">
-                                <span> PHP</span>
-                                <a href="https://openclassrooms.com/course-certificates/7063572333">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> sql</span>
-                                <a rel="noopener" href="https://www.sololearn.com/Certificate/1060-3206090/pdf/">
-                                    <img loading=lazy class="cert-img" src="images/cert.png" alt="">
-                                </a>
-                            </div>
-                            <div class="text-widget block conf">
-                                <span>Sass / css-in-js</span>
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> Node.js</span>
-                               
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> grapheQL</span>
-                               
-                            </div>
-                            <div class="text-widget block cert">
-                                <span> Angularjs</span>
-                               
-                            </div>
-                           
-                          
-                            
-                            <div class="text-widget block conf">
-                                <span> Materialize</span>
-                            </div>
+                <!-- end trello clone using react & typescript -->
+                <!-- messaging app  -->
+                <div class="col-sm-6 col-md-3 grid-item app react">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/messaging-app.png"
+                      alt="Reactjs"
+                    />
 
-                            <div class="text-widget block conf">
-                                <span> Bootstrap / Material UI / Antd</span>
-                            </div>
-                            <div class="text-widget block conf">
-                                <span> npm</span>
-                            </div>
-                            <div class="text-widget block conf">
-                                <span>Gulp/Grunt/ webpack </span>
-                            </div>
-                            <div class="text-widget block conf">
-                                <span>Jira</span>
-                            </div>
-                            <div class="text-widget block conf">
-                                <span>Gitlab / github</span>
-                            </div>
-                          
-                        
-                           
-                            <div class="text-widget block conf">
-                                <span>linux</span>
-                            </div>
-                            <div class="text-widget block conf">
-                                <span> shell</span>
-                            </div>
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >messaging App(Reactjs & redux)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/messaging-app/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tunisia SVG map -->
+                <div
+                  class="col-sm-6 col-md-3 grid-item app svg javascript Typescript react"
+                >
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/map.png"
+                      alt=""
+                    />
 
-                        </div>
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Meteorological map of Tunisia (svg, weather Api)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/tunisia_weather_map/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <!-- end sections -->
- 
-        <!-- Footter-->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-ms-12">
-                        <div class="social-links-container text-center">
-                            <ul class="list-unstyled list-inline">
-                                <li>
-                                    <a  rel="noopener" href="https://twitter.com/adnen_rebai" target="_blank">
-                                        <span class="social-link">
-                                            <i class="fa fa-twitter"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a rel="noopener" href="https://codepen.io/adnenrebai/" target="_blank">
-                                        <span class="social-link">
-                                            <i class="fa fa-codepen"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a rel="noopener" href="https://github.com/adnenre" target="_blank">
-                                        <span class="social-link">
-                                            <i class="fa fa-github"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a rel="noopener" href="https://www.linkedin.com/in/adnen-rebai-65843263/" target="_blank">
-                                        <span class="social-link">
-                                            <i class="fa fa-linkedin"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <!-- end Tunisia svg map -->
+                <!-- React task managment  -->
+                <div class="col-sm-6 col-md-3 grid-item app react">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/react-novice-button.png"
+                      alt="Reactjs"
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Button module (Reactjs & styled components)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="hhttps://adnenre.github.io/react-novice-button/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://github.com/adnenre/react-novice-button"
+                      >
+                        repo
+                        <i class="icon fa fa-eye"></i>
+                      </a>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </footer>
-        <!-- end footer -->
-        <div class="c-copyright">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="c-copyright__text">Rebai Adnen 2018 © All right reserved </p>
+                <div class="col-sm-6 col-md-3 grid-item design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/novisdevAgency.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Theme agency onepage (novisdev)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/novisdev%20theme%20multipurpose%20one%20page/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-sm-6 col-md-3 grid-item design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/soon.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Coming soon template</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/soon-demo/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- bootstrap price table -->
+                <div class="col-sm-6 col-md-3 grid-item bootstrap">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/priceTable.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Prices table</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/pricetable/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- admin panel theme using itcss & BEM METHODOLOGY -->
+                <div class="col-sm-6 col-md-3 grid-item bootstrap">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/adminPanelPreview.jpg"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Admin panel theme using ITCSS/BEM (in progress)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- button itcss & BEM METHODOLOGY -->
+                <div class="col-sm-6 col-md-3 grid-item design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/buttonPreVisit.jpg"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Button using ITCSS/BEM (in progress)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM/button.html"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- input itcss & BEM METHODOLOGY -->
+                <div class="col-sm-6 col-md-3 grid-item design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/inputPreveiw.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >input filed using ITCSS/BEM (in progress)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM/input.html"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- web agency theme -->
+                <div class="col-sm-6 col-md-3 grid-item design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/theme.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Theme web agency using (Bootstrap4)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/themeAgenceWeb/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item bootstrap">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/carousel.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Client carousel</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/carousel/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- login page from admin panel BEM & ITCSS -->
+                <div class="col-sm-6 col-md-3 grid-item design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/loginPage.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >login page using BEM and ITCSS (in progress)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM/login.html"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- calculator -->
+                <div class="col-sm-6 col-md-3 grid-item app">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/calc.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Calculator using javascript</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://codepen.io/adnenrebai/full/GropqJ/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--wikipidia search-->
+                <div class="col-sm-6 col-md-3 grid-item app">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/portfolio-4.jpg"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >small app wikipedia search
+                      </span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://codepen.io/adnenrebai/full/EmqxQL/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--loader collection-->
+                <div class="col-sm-6 col-md-3 grid-item design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/loader.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Collection of loaders Css3</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://codepen.io/adnenrebai/full/YVmLQX/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--Clock-->
+                <div class="col-sm-6 col-md-3 grid-item app">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/clock.png"
+                      alt="Led Clock"
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Led clock using javascript</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://codepen.io/adnenrebai/full/OpwpoM/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app Angular">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/myApp.png"
+                      alt="Angular2App"
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Angular2 My Note</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/Angular2AppNote/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app Angular">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/gestioncontact.png"
+                      alt="gestionContact"
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >demo App Manage my Contact Angularjs</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/gestionContact/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item svg design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/notfound404.png"
+                      alt=""
+                    />
+                    <div class="image-box__desc">
+                      <span class="image-box__text">404 page using SVG</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://codepen.io/adnenrebai/full/KNqQJP/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/portfolio-8.png"
+                      alt=""
+                    />
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Coming soon template</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/soon-demo"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- comming soon template !-->
+                <div class="col-sm-6 col-md-3 grid-item app design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/portfolio-9.png"
+                      alt=""
+                    />
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Coming soon template</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/soon-demo"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- comming soon template !-->
+                <div class="col-sm-6 col-md-3 grid-item app design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/portfolio-10.png"
+                      alt=""
+                    />
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Coming soon template</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/soon-demo"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/portfolio-11.png"
+                      alt=""
+                    />
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Coming soon template</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/soon-demo"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/portfolio-12.png"
+                      alt=""
+                    />
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Coming soon template</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/soon-demo"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- React task managment  -->
+                <div class="col-sm-6 col-md-3 grid-item app react">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/todoUI.png"
+                      alt="Reactjs"
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Tasks Management (Reactjs)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/manage-task/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- React Hacker news  -->
+                <div class="col-sm-6 col-md-3 grid-item app react">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/HackerNews.png"
+                      alt="Reactjs"
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Hacker news (Reactjs,GraphQl,Nodejs)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://wy8xz7o628.codesandbox.io/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- React Component  -->
+                <div class="col-sm-6 col-md-3 grid-item app react">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/ReactComponent.jpg"
+                      alt="Reactjs"
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Collection of REact Components (Reactjs)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://x3wz6j8ll4.codesandbox.io/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- React app vote  -->
+                <div class="col-sm-6 col-md-3 grid-item app react">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/voteApp.png"
+                      alt="Reactjs"
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Products votes (Reactjs)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/react-app-vote/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app d3js svg">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/ColorPicker.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >color picker using(d3.js)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://bl.ocks.org/adnenre/raw/8fae80314887a4554db99268c1d7041e/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/ColorPickerflex.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >choose your color palet (flexbox)</span
+                      >
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/colorpicker/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app design javascript">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/devTools.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">small Css gnerator</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://codepen.io/adnenrebai/full/oeWmvj/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item app design css">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/slideshow.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">css3 slider</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://codepen.io/adnenrebai/full/xLWQvN/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item svg d3js datavis">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/barChartV.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">chart using d3.js </span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://bl.ocks.org/adnenre"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item design d3js datavis">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/barChartH.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">chart using d3.js </span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://bl.ocks.org/adnenre"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item design d3js datavis">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/c3Chart.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">chart using c3.js </span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://adnenre.github.io/admin-panel-using-ITCSS-BEM/charts.html"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item svg d3js datavis">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/PieChart.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text"
+                        >Pie chart using d3.js
+                      </span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://bl.ocks.org/adnenre"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item svg d3js datavis">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/PieChart2.png"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Chart graphique </span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://codepen.io/adnenrebai/full/xpdaLo/"
+                      >
+                        Visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-        <!-- end content-->
-        <script src="js/dist/main.min.js"></script>
-</body>
+      </section>
+      <!-- end section  -->
+      <hr class="inter-section" />
+      <!-- start section -->
+      <section id="competence">
+        <div class="container">
+          <div class="intro-title">
+            <h3 class="text-center color-primary section-title">Skills</h3>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="widget-container">
+                <div class="text-widget block cert">
+                  <span> HTML5</span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.sololearn.com/Certificate/1014-3206090/pdf/"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="text-widget block cert">
+                  <span>CSS3</span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.sololearn.com/Certificate/1023-3206090/pdf/"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
 
+                <div class="text-widget block cert">
+                  <span> javascript </span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.freecodecamp.org/certification/adnen/javascript-algorithms-and-data-structures"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="text-widget block cert">
+                  <span> JQuery</span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.sololearn.com/Certificate/1082-3206090/pdf/"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="text-widget block cert">
+                  <span> Git </span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://openclassrooms.com/course-certificates/4928245600"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="text-widget block cert">
+                  <span> Reactjs</span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://openclassrooms.com/course-certificates/3123304372"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="text-widget block cert">
+                  <span> Responsive web Design</span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href=" https://www.freecodecamp.org/certification/adnen/responsive-web-design"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="text-widget block cert">
+                  <span> javascript-algorithms-and-data-structures</span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href=" https://www.freecodecamp.org/certification/adnen/javascript-algorithms-and-data-structures"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="text-widget block cert">
+                  <span> PHP</span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://openclassrooms.com/course-certificates/7063572333"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="text-widget block cert">
+                  <span> sql</span>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.sololearn.com/Certificate/1060-3206090/pdf/"
+                  >
+                    <img
+                      loading="lazy"
+                      class="cert-img"
+                      src="images/cert.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="text-widget block conf">
+                  <span>Sass / css-in-js</span>
+                </div>
+                <div class="text-widget block cert">
+                  <span> Node.js</span>
+                </div>
+                <div class="text-widget block cert">
+                  <span> grapheQL</span>
+                </div>
+                <div class="text-widget block cert">
+                  <span> Angularjs</span>
+                </div>
+
+                <div class="text-widget block conf">
+                  <span> Materialize</span>
+                </div>
+
+                <div class="text-widget block conf">
+                  <span> Bootstrap / Material UI / Antd</span>
+                </div>
+                <div class="text-widget block conf">
+                  <span> npm</span>
+                </div>
+                <div class="text-widget block conf">
+                  <span>Gulp/Grunt/ webpack </span>
+                </div>
+                <div class="text-widget block conf">
+                  <span>Jira</span>
+                </div>
+                <div class="text-widget block conf">
+                  <span>Gitlab / github</span>
+                </div>
+
+                <div class="text-widget block conf">
+                  <span>linux</span>
+                </div>
+                <div class="text-widget block conf">
+                  <span> shell</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end sections -->
+
+      <!-- Footter-->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-ms-12">
+              <div class="social-links-container text-center">
+                <ul class="list-unstyled list-inline">
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://twitter.com/adnen_rebai"
+                    >
+                      <span class="social-link">
+                        <i class="fa fa-twitter"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://codepen.io/adnenrebai/"
+                    >
+                      <span class="social-link">
+                        <i class="fa fa-codepen"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://github.com/adnenre"
+                    >
+                      <span class="social-link">
+                        <i class="fa fa-github"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://www.linkedin.com/in/adnen-rebai-65843263/"
+                    >
+                      <span class="social-link">
+                        <i class="fa fa-linkedin"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+      <div class="c-copyright">
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="c-copyright__text">
+              Rebai Adnen 2018 © All right reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end content-->
+    <script src="js/dist/main.min.js"></script>
+  </body>
 </html>
