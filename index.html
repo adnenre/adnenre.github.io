@@ -63,20 +63,20 @@
       <div id="loader"></div>
     </div>
     <div class="content">
-      <nav class="navigation">
+      <nav class="navigation" aria-label="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
         <label for="navi-toggle" class="navigation__button">
           <span class="navigation__icon"></span>
         </label>
         <div class="navigation__background"></div>
         <div class="navigation__overlay"></div>
-        <nav class="navigation__nav">
+        <nav class="navigation__nav" aria-label="navigation-nav">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#" class="navigation__link">Home</a>
             </li>
             <li class="navigation__item">
-              <a href="#portfolio" class="navigation__link">Projects</a>
+              <a href="#portfolio" class="navigation__link">Examples</a>
             </li>
             <li class="navigation__item">
               <a href="#competence" class="navigation__link">Skills</a>
@@ -108,7 +108,7 @@
       <section id="portfolio" class="intro">
         <div class="container">
           <div class="intro-title">
-            <h3 class="text-center color-primary section-title">Projects</h3>
+            <h3 class="text-center color-primary section-title">Examples</h3>
           </div>
           <div class="row">
             <div class="col-md-12 block">
@@ -147,7 +147,7 @@
                 </ul>
               </div>
               <div class="grid isotope-container">
-                   <!-- React Component  -->
+                <!-- React Component  -->
                 <div class="col-sm-6 col-md-3 grid-item app react">
                   <div class="image-box">
                     <img
@@ -189,7 +189,7 @@
                       >
                       <a
                         class="image-box__link"
-                        href="https://adnenre.github.io/trello-react-typescript//"
+                        href="https://adnenre.github.io/trello-react-typescript/"
                       >
                         Visit
                         <i class="icon fa fa-eye"></i>
@@ -238,7 +238,8 @@
 
                     <div class="image-box__desc">
                       <span class="image-box__text"
-                        >Meteorological map of Tunisia (React, SVG, weather Api)</span
+                        >Meteorological map of Tunisia (React, SVG, weather
+                        Api)</span
                       >
                       <a
                         target="_blank"
@@ -271,7 +272,7 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         class="image-box__link"
-                        href="hhttps://adnenre.github.io/react-novice-button/"
+                        href="https://adnenre.github.io/my-vite-app-test/"
                       >
                         Visit
                         <i class="icon fa fa-eye"></i>
@@ -329,6 +330,29 @@
                         rel="noopener noreferrer"
                         class="image-box__link"
                         href="https://adnenre.github.io/soon-demo/"
+                      >
+                        visit
+                        <i class="icon fa fa-eye"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 grid-item design">
+                  <div class="image-box">
+                    <img
+                      loading="lazy"
+                      class="image-box__img"
+                      src="images/custom-editor.webp"
+                      alt=""
+                    />
+
+                    <div class="image-box__desc">
+                      <span class="image-box__text">Custom Editor</span>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="image-box__link"
+                        href="https://oy29z.csb.app/"
                       >
                         visit
                         <i class="icon fa fa-eye"></i>
@@ -592,32 +616,7 @@
                     </div>
                   </div>
                 </div>
-                <!--Clock-->
-                <div class="col-sm-6 col-md-3 grid-item app">
-                  <div class="image-box">
-                    <img
-                      loading="lazy"
-                      class="image-box__img"
-                      src="images/clock.webp"
-                      alt="Led Clock"
-                    />
 
-                    <div class="image-box__desc">
-                      <span class="image-box__text"
-                        >Led clock using javascript</span
-                      >
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="image-box__link"
-                        href="https://codepen.io/adnenrebai/full/OpwpoM/"
-                      >
-                        visit
-                        <i class="icon fa fa-eye"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
                 <div class="col-sm-6 col-md-3 grid-item app Angular">
                   <div class="image-box">
                     <img
@@ -853,7 +852,7 @@
                     </div>
                   </div>
                 </div>
-             
+
                 <!-- React app vote  -->
                 <div class="col-sm-6 col-md-3 grid-item app react">
                   <div class="image-box">
