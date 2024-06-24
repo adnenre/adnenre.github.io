@@ -62,7 +62,7 @@ var counter = {
 
     // SET YEAR : INTEGER
 
-    Year: 2024,
+    Year: 2025,
   },
 };
 
