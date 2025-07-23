@@ -6,7 +6,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { Github, Linkedin, Twitter } from "lucide-react";
 import { translations } from "@/lib/translations";
 
 import { FadeIn } from "@/components/animations/fade-in";
@@ -15,27 +14,7 @@ import { StaggerItem } from "@/components/animations/stagger-item";
 import { PageTransition } from "@/components/animations/page-transition";
 import { SlideIn } from "@/components/animations/slide-in";
 import { useLanguage } from "@/contexts/LanguageContext";
-
-const socialLinks = [
-  {
-    icon: Github,
-    label: "GitHub",
-    href: "https://github.com/adnenre",
-    username: "@adnenre",
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/adnen-r-65843263/",
-    username: "in/adnen",
-  },
-  {
-    icon: Twitter,
-    label: "Twitter",
-    href: "https://twitter.com",
-    username: "@adnen_rebai",
-  },
-];
+import { socialLinks } from "@/lib/socialLinks";
 
 export default function Contact() {
   const { language: lang } = useLanguage();
@@ -69,7 +48,7 @@ export default function Contact() {
               </CardHeader>
               <CardContent className="space-y-3">
                 <StaggerContainer
-                  className="grid md:grid-cols-3 "
+                  className="grid md:grid-cols-4 "
                   staggerDelay={0.1}
                 >
                   {socialLinks.map((social) => (

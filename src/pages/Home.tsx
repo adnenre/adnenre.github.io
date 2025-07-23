@@ -1,6 +1,6 @@
 import { TypedText } from "@/components/typed-text";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { translations } from "@/lib/translations";
 import { FadeIn } from "@/components/animations/fade-in";
@@ -10,6 +10,7 @@ import { ScaleIn } from "@/components/animations/scale-in";
 import { PageTransition } from "@/components/animations/page-transition";
 import Author from "@/assets/adnen.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { socialLinks } from "@/lib/socialLinks";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -77,16 +78,6 @@ export default function Home() {
                   size="lg"
                   className="group hover:scale-105 focus:scale-95 transition-transform duration-200"
                 >
-                  {/* <Link to={`/${language}/projects`}>
-                    {t.home.viewWork}
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Link> */}
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  className="group hover:scale-105 focus:scale-95 transition-transform duration-200"
-                >
                   <Link to={`/contact`}>
                     {t.home.getInTouch}{" "}
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -97,32 +88,23 @@ export default function Home() {
 
             <ScaleIn delay={0.8}>
               <div className="flex justify-center space-x-6 pt-8">
-                <Button variant="ghost" size="icon" asChild>
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                {socialLinks.map((social) => (
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    asChild
+                    key={social.label}
                   >
-                    <Github className="h-5 w-5" />
-                    <span className="sr-only">GitHub</span>
-                  </a>
-                </Button>
-                <Button variant="ghost" size="icon" asChild>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Linkedin className="h-5 w-5" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                </Button>
-                <Button variant="ghost" size="icon" asChild>
-                  <a href="mailto:john@example.com">
-                    <Mail className="h-5 w-5" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </Button>
+                    <a
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <social.icon className="h-5 w-5" />
+                      <span className="sr-only">{social.label}</span>
+                    </a>
+                  </Button>
+                ))}
               </div>
             </ScaleIn>
           </div>
