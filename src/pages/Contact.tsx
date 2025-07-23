@@ -1,0 +1,132 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
+import { Github, Linkedin, Twitter } from "lucide-react";
+import { translations } from "@/lib/translations";
+
+import { FadeIn } from "@/components/animations/fade-in";
+import { StaggerContainer } from "@/components/animations/stagger-containter";
+import { StaggerItem } from "@/components/animations/stagger-item";
+import { PageTransition } from "@/components/animations/page-transition";
+import { SlideIn } from "@/components/animations/slide-in";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+const socialLinks = [
+  {
+    icon: Github,
+    label: "GitHub",
+    href: "https://github.com/adnenre",
+    username: "@adnenre",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/adnen-r-65843263/",
+    username: "in/adnen",
+  },
+  {
+    icon: Twitter,
+    label: "Twitter",
+    href: "https://twitter.com",
+    username: "@adnen_rebai",
+  },
+];
+
+export default function Contact() {
+  const { language: lang } = useLanguage();
+
+  const t = translations[lang];
+
+  return (
+    <PageTransition>
+      <div className="container mx-auto px-4 py-16">
+        <FadeIn className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            {t.contact.title}
+          </h1>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            {t.contact.subtitle}
+          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto my-2">
+            {t.contact.subtitle_2}
+          </p>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            {t.contact.subtitle_3}
+          </p>
+        </FadeIn>
+
+        <div className="grid md:grid-cols-1  gap-8 max-w-6xl mx-auto">
+          <SlideIn direction="down" delay={0.4}>
+            <Card>
+              <CardHeader className="text-center">
+                <CardTitle>{t.contact.social.title}</CardTitle>
+                <CardDescription>{t.contact.social.subtitle}</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <StaggerContainer
+                  className="grid md:grid-cols-3 "
+                  staggerDelay={0.1}
+                >
+                  {socialLinks.map((social) => (
+                    <StaggerItem key={social.label}>
+                      <a
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center space-x-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                      >
+                        <social.icon className="w-5 h-5 text-primary" />
+                        <div>
+                          <div className="font-medium">{social.label}</div>
+                          <div className="text-sm text-muted-foreground">
+                            {social.username}
+                          </div>
+                        </div>
+                      </a>
+                    </StaggerItem>
+                  ))}
+                </StaggerContainer>
+              </CardContent>
+            </Card>
+          </SlideIn>
+
+          {/* <SlideIn direction="right" delay={0.6}>
+            <Card>
+              <CardHeader>
+                <CardTitle>{t.contact.availability.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <StaggerContainer className="space-y-2" staggerDelay={0.1}>
+                  <StaggerItem className="flex items-center justify-between">
+                    <span>{t.contact.availability.status}</span>
+                    <span className="flex items-center text-green-600">
+                      <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
+                      {t.contact.availability.available}
+                    </span>
+                  </StaggerItem>
+                  <StaggerItem className="flex items-center justify-between">
+                    <span>{t.contact.availability.responseTime}</span>
+                    <span className="text-muted-foreground">
+                      {t.contact.availability.responseValue}
+                    </span>
+                  </StaggerItem>
+                  <StaggerItem className="flex items-center justify-between">
+                    <span>{t.contact.availability.timezone}</span>
+                    <span className="text-muted-foreground">
+                      {t.contact.availability.timezoneValue}
+                    </span>
+                  </StaggerItem>
+                </StaggerContainer>
+              </CardContent>
+            </Card>
+          </SlideIn> */}
+        </div>
+      </div>
+    </PageTransition>
+  );
+}
