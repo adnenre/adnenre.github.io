@@ -5,6 +5,11 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  server: {
+    headers: {
+      "Content-Type": "text/javascript",
+    },
+  },
   base: "/",
   resolve: {
     alias: {
