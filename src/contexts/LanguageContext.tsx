@@ -6,9 +6,9 @@ type Language = "en" | "fr";
 
 // Type for context value
 interface LanguageContextType {
-  language: Language;
+  language: string;
   toggleLanguage: () => void;
-  setLanguage: (lang: Language) => void;
+  setLanguage: (lang: string) => void;
 }
 
 // Create context with undefined default
@@ -27,7 +27,7 @@ export const LanguageProvider: FC<LanguageProviderProps> = ({
   children,
   defaultLanguage = "en",
 }) => {
-  const [language, setLanguage] = useState<Language>(defaultLanguage);
+  const [language, setLanguage] = useState<string>(defaultLanguage);
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "en" ? "fr" : "en"));
