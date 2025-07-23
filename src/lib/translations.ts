@@ -102,7 +102,7 @@ export const translations = {
         "Mentore et soutient les développeurs",
       ],
       description:
-        "Je pilote le développement d'applications web performantes et évolutives en utilisant des architectures modernes. Passionné(e) par le mentorat d'équipes, l'excellence technique et la création d'expériences digitales qui font la différence.",
+        "Je pilote le développement d'applications web performantes et évolutives en utilisant des architectures modernes. Passionné par le mentorat d'équipes, l'excellence technique et la création d'expériences digitales qui font la différence.",
       viewWork: "Voir Mon Travail",
       getInTouch: "Me Contacter",
     },
