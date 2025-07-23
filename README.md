@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# 👋 Hi, I'm [Your Name]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tech Lead | JavaScript Architect | Full Stack Specialist**
 
-Currently, two official plugins are available:
+🚀 Leading high-performance teams to build scalable web applications with modern JavaScript technologies  
+💡 Passionate about mentoring developers, optimizing architectures, and delivering exceptional user experiences
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Core Technical Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### **Frontend Leadership**
 
-- Configure the top-level `parserOptions` property like this:
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white)
+![Vue](https://img.shields.io/badge/-Vue-4FC08D?logo=vue.js&logoColor=white)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### **Backend Expertise**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white)
+![NestJS](https://img.shields.io/badge/-NestJS-E0234E?logo=nestjs&logoColor=white)
