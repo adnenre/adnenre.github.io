@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-import { Navigation } from "./components/navigation";
-import { ThemeProvider } from "./contexts/ThemeContext";
+import { Navigation } from "@/components/navigation";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 export default function App() {
   return (
