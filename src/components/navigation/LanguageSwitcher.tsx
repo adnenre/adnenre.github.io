@@ -7,9 +7,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Languages } from "lucide-react";
+import { Locale } from "@/lib/translations";
 
-type Language = "en" | "fr";
-const languages: Record<Language, { name: string; flag: string }> = {
+const languages: Record<Locale, { name: string; flag: string }> = {
   en: { name: "English", flag: "US" },
   fr: { name: "French", flag: "FR" },
 };
@@ -28,7 +28,7 @@ const LanguageSwitcher = () => {
         {Object.entries(languages).map(([locale, { name, flag }]) => (
           <DropdownMenuItem
             key={locale}
-            onClick={() => setLanguage(locale)}
+            onClick={() => setLanguage(locale as Locale)}
             className={"cursor-pointer"}
           >
             <img

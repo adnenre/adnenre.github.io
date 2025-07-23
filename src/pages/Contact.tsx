@@ -17,9 +17,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { socialLinks } from "@/lib/socialLinks";
 
 export default function Contact() {
-  const { language: lang } = useLanguage();
+  const { language } = useLanguage();
 
-  const t = translations[lang];
+  const t = translations[language];
 
   return (
     <PageTransition>

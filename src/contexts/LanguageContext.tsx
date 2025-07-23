@@ -1,14 +1,12 @@
 // contexts/LanguageContext.tsx
+import { Locale } from "@/lib/translations";
 import { createContext, useContext, useState, ReactNode, FC } from "react";
-
-// Define available languages
-type Language = "en" | "fr";
 
 // Type for context value
 interface LanguageContextType {
-  language: string;
+  language: Locale;
   toggleLanguage: () => void;
-  setLanguage: (lang: string) => void;
+  setLanguage: (lang: Locale) => void;
 }
 
 // Create context with undefined default
@@ -19,7 +17,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 // Provider props type
 interface LanguageProviderProps {
   children: ReactNode;
-  defaultLanguage?: Language; // Optional default language
+  defaultLanguage?: Locale; // Optional default language
 }
 
 // Context Provider component
@@ -27,7 +25,7 @@ export const LanguageProvider: FC<LanguageProviderProps> = ({
   children,
   defaultLanguage = "en",
 }) => {
-  const [language, setLanguage] = useState<string>(defaultLanguage);
+  const [language, setLanguage] = useState<Locale>(defaultLanguage);
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "en" ? "fr" : "en"));
