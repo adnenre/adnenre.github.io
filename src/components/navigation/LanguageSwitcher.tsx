@@ -4,7 +4,7 @@ const LanguageSwitcher = () => {
   const { language, toggleLanguage } = useLanguage();
 
   return (
-    <Button variant="secondary" onClick={toggleLanguage}>
+    <Button variant="default" onClick={toggleLanguage}>
       {language.toUpperCase()}
     </Button>
   );
