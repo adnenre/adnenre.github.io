@@ -14,12 +14,9 @@ const languages: Record<Language, { name: string; flag: string }> = {
   fr: { name: "French", flag: "FR" },
 };
 const LanguageSwitcher = () => {
-  const { language, setLanguage } = useLanguage();
+  const { setLanguage } = useLanguage();
 
   return (
-    // <Button variant="default" onClick={toggleLanguage} className="w-5 h-6 mt-2">
-    //   {language.charAt(0).toUpperCase() + language.slice(1)}
-    // </Button>
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="h-8 w-8 border-0">
