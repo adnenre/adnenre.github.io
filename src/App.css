@@ -1,0 +1,8 @@
+html,
+body {
+  height: 100vh; /* 100% of viewport height */
+  width: 100vw; /* 100% of viewport width */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Optional: prevents scrolling */
+}

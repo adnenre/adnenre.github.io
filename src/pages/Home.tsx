@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted/20">
+      <div className="flex items-center justify-center bg-gradient-to-br from-background to-muted/20">
         <div className="container px-4 py-16 mx-auto text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Developer Avatar */}
@@ -26,7 +26,7 @@ export default function Home() {
                 <div className="relative w-full h-full">
                   <img
                     src={Author}
-                    alt="Adnen  - Frontend Developer"
+                    alt="Adnen  - Techlead / Js Consultant"
                     width={160}
                     height={160}
                     className="rounded-full object-cover shadow-2xl ring-4 ring-primary/20   "
