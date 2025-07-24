@@ -8,6 +8,7 @@ export const translations = {
     },
     // Home Page
     home: {
+      question: "Hi are you looking ...  ?",
       greeting: "Hi, I'm",
       name: "Adnen ",
       roles: [
@@ -93,6 +94,7 @@ export const translations = {
     },
     // Home Page
     home: {
+      question: "Salut, tu cherches ... ?",
       greeting: "Salut, je suis",
       name: "Adnen ",
       roles: [
