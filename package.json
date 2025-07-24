@@ -25,6 +25,7 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-switch": "^1.2.5",
     "@tailwindcss/vite": "^4.0.8",
+    "@types/styled-jsx": "^2.2.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -35,6 +36,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",
     "recharts": "^2.15.4",
+    "styled-jsx": "^5.1.7",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^4.0.5"

@@ -11,6 +11,7 @@ import { PageTransition } from "@/components/animations/page-transition";
 import Author from "@/assets/adnen.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { socialLinks } from "@/lib/socialLinks";
+import TestimonialsSlider from "@/components/testimonials";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -36,7 +37,7 @@ export default function Home() {
                 </StaggerItem>
               </StaggerContainer>
             </div>
-            <div className=" mx-auto md:max-w-xl max-w-sm transform rounded-2xl  bg-white  text-center shadow-lg -translate-y-24 p-15">
+            <div className="w-[90%] max-w-4xl mx-auto md:max-w-xl  transform rounded-2xl  bg-white  text-center shadow-lg -translate-y-24 p-15">
               {/* Developer Avatar */}
               <ScaleIn delay={0.2}>
                 <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8">
@@ -89,7 +90,9 @@ export default function Home() {
                 </div>
               </FadeIn>
             </div>
-
+            <ScaleIn delay={0.8}>
+              <TestimonialsSlider />
+            </ScaleIn>
             <ScaleIn delay={0.8}>
               <div className="flex justify-center space-x-6 pt-8">
                 {socialLinks.map((social) => (
