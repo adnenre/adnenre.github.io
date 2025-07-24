@@ -21,12 +21,12 @@ export default function Home() {
     <PageTransition>
       <div className="flex items-center justify-center bg-gradient-to-br from-background to-muted/20">
         <div className="container px-4 py-16 mx-auto text-center">
-          <div className="max-w-5xl mx-auto space-y-2">
-            <div className="mx-auto h-72 md:max-w-2xl rounded-2xl bg-gradient-to-r from-blue-400 to-indigo-500 p-8 text-center text-white">
+          <div className="relative max-w-5xl mx-auto space-y-2">
+            <div className="z-10 mx-auto h-72 md:max-w-2xl   text-center border border-gray-200 rounded-2xl p-6 hover:border-indigo-600 transition-all ">
               <h1 className="mt-10 text-3xl">{t.home.question}</h1>
               <StaggerContainer className="space-y-4 z-20">
                 <StaggerItem>
-                  <div className="mt-3 text-xl md:text-2xl min-h-[3rem] text-white">
+                  <div className="mt-3 text-xl md:text-2xl min-h-[3rem] ">
                     <TypedText
                       strings={t.home.roles}
                       typeSpeed={50}
@@ -37,7 +37,7 @@ export default function Home() {
                 </StaggerItem>
               </StaggerContainer>
             </div>
-            <div className="w-[90%] max-w-4xl mx-auto md:max-w-xl  transform rounded-2xl  bg-white  text-center shadow-lg -translate-y-24 p-15">
+            <div className="z-30 w-[90%] max-w-4xl mx-auto md:max-w-xl  transform rounded-2xl  bg-white  text-center shadow-lg -translate-y-24 p-15 overflow-hidden">
               {/* Developer Avatar */}
               <ScaleIn delay={0.2}>
                 <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8">
@@ -80,7 +80,7 @@ export default function Home() {
                   <Button
                     asChild
                     size="lg"
-                    className=" text-white group hover:scale-105 focus:scale-95 transition-transform duration-200 mt-10 rounded-md bg-gradient-to-r from-blue-400 to-indigo-500"
+                    className=" text-white group hover:scale-105 focus:scale-95 transition-transform duration-200 mt-10 rounded-md bg-gradient-to-r from-blue-300 to-indigo-600"
                   >
                     <Link to={`/contact`}>
                       {t.home.getInTouch}{" "}

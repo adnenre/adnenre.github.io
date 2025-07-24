@@ -8,10 +8,13 @@ const TestimonialsSlider = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Steven Porter, Novomedici LLC",
-      role: "CEO",
-      quote: "Grat job !!",
-      image: "",
+      name: "Jasurbek Nabijonov",
+      cauntry: "Uzbekistan",
+      role: "Upwork Client",
+      quote:
+        "Adnen completed difficult tasks on time and with the best possible result. He has great experience in solving nontrivial tasks. I would consider him if I have any future tasks first. Very talented software developer. Hope to work again the in future.",
+      image:
+        "https://www.upwork.com/profile-portraits/c1CUKzRjKh4_pw2xN6m86pdg2p7E2ffhyjsEOI4pXvd_oqqRaClMN_A0paTugDHcaK",
     },
     {
       id: 2,
@@ -24,15 +27,13 @@ const TestimonialsSlider = () => {
         "https://www.upwork.com/profile-portraits/c1CUKzRjKh4_pw2xN6m86pdg2p7E2ffhyjsEOI4pXvd_oqqRaClMN_A0paTugDHcaK",
     },
     {
-      id: 3,
-      name: "Jasurbek Nabijonov",
-      cauntry: "Uzbekistan",
-      role: "Upwork Client",
-      quote:
-        "Adnen completed difficult tasks on time and with the best possible result. He has great experience in solving nontrivial tasks. I would consider him if I have any future tasks first. Very talented software developer. Hope to work again the in future.",
-      image:
-        "https://www.upwork.com/profile-portraits/c1CUKzRjKh4_pw2xN6m86pdg2p7E2ffhyjsEOI4pXvd_oqqRaClMN_A0paTugDHcaK",
+      id: 2,
+      name: "Steven Porter, Novomedici LLC",
+      role: "CEO",
+      quote: "Grat job !!",
+      image: "",
     },
+
     {
       id: 4,
       name: "Jean-Michel Van Lippevelde, Accelior",
@@ -74,22 +75,22 @@ const TestimonialsSlider = () => {
   };
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 flex flex-col sm:flex-row justify-between items-center gap-8">
-          <h2 className="text-4xl font-bold text-gray-900">Testimonials</h2>
+          <h2 className="text-4xl font-bold ">Testimonials</h2>
 
           <div className="flex gap-4">
             <button
               onClick={goToPrev}
-              className="group flex justify-center items-center border border-indigo-600 w-12 h-12 rounded-full hover:bg-indigo-600 transition-colors"
+              className="hover:cursor-pointer group flex justify-center items-center border dark:border-indigo-600 w-12 h-12 rounded-full hover:bg-indigo-600 transition-colors"
               aria-label="Previous testimonial"
             >
               <ArrowLeft className="w-6 h-6 text-indigo-600 group-hover:text-white" />
             </button>
             <button
               onClick={goToNext}
-              className="group flex justify-center items-center border border-indigo-600 w-12 h-12 rounded-full hover:bg-indigo-600 transition-colors"
+              className="hover:cursor-pointer group flex justify-center items-center border dark:border-indigo-600 w-12 h-12 rounded-full hover:bg-indigo-600 transition-colors"
               aria-label="Next testimonial"
             >
               <ArrowRight className="w-6 h-6 text-indigo-600 group-hover:text-white" />
@@ -105,8 +106,8 @@ const TestimonialsSlider = () => {
           >
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="w-full flex-shrink-0 px-4">
-                <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:border-indigo-600 transition-all h-full">
-                  <div className="text-lg text-gray-600 min-h-[96px] flex flex-col">
+                <div className=" border border-gray-200 rounded-2xl p-6 hover:border-indigo-600 transition-all h-full">
+                  <div className="text-lg  min-h-[96px] flex flex-col">
                     <Quote />
                     <p className="px-10">{testimonial.quote}</p>
                     <Quote className="mt-auto ml-auto" />
@@ -123,9 +124,7 @@ const TestimonialsSlider = () => {
                       className="w-12 h-12 rounded-full object-cover"
                     />
                     <div>
-                      <h3 className="font-medium text-gray-900">
-                        {testimonial.name}
-                      </h3>
+                      <h3 className="font-medium ">{testimonial.name}</h3>
                       <p className="text-sm text-gray-500">
                         {testimonial.role}
                       </p>
