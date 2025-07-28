@@ -1,4 +1,9 @@
 const technologies = [
+  "jira",
+  "sonarcloud",
+  "github",
+  "gitlab",
+  "git",
   "HTML5",
   "css3",
   "jquery",
@@ -12,7 +17,7 @@ const technologies = [
   "next",
   "nodejs",
   "php",
-  "git",
+
   "mysql",
   "astro",
   "bash",
@@ -27,7 +32,7 @@ const InfiniteTechScroll = () => (
 
     {/* Scrolling items - triple the array for seamless looping */}
     <div className="flex animate-scroll hover:animate-paused gap-12 md:gap-20 w-max">
-      {[...technologies].map((tech, index) => (
+      {[...technologies, ...technologies].map((tech, index) => (
         <div
           key={`${tech}-${index}`} // Unique key for each instance
           className="flex items-center gap-2 group transition-all duration-300"
