@@ -24,10 +24,10 @@ export default function Home() {
         <div className="container px-4 py-16 mx-auto text-center">
           <div className="relative max-w-5xl mx-auto space-y-2">
             <div className="z-10 mx-auto h-72 md:max-w-2xl   text-center border border-gray-200 rounded-2xl p-6 hover:border-indigo-600 transition-all ">
-              <h1 className="mt-10 text-3xl">{t.home.question}</h1>
+              <h1 className="mt-10 md:text-3xl  text-2xl">{t.home.question}</h1>
               <StaggerContainer className="space-y-4 z-20">
                 <StaggerItem>
-                  <div className="mt-3 text-xl md:text-2xl min-h-[3rem] ">
+                  <div className=" mt-3 text-xl md:text-2xl min-h-[3rem] ">
                     <TypedText
                       strings={t.home.roles}
                       typeSpeed={50}
@@ -38,7 +38,7 @@ export default function Home() {
                 </StaggerItem>
               </StaggerContainer>
             </div>
-            <div className="z-30 w-[90%] max-w-4xl mx-auto md:max-w-xl  transform rounded-2xl  bg-white  text-center shadow-lg -translate-y-24 p-15 overflow-hidden">
+            <div className="z-30 w-[90%] max-w-4xl mx-auto md:max-w-xl  transform rounded-2xl  bg-white  text-center shadow-lg md:-translate-y-24 -translate-y-16  p-15 overflow-hidden">
               {/* Developer Avatar */}
               <ScaleIn delay={0.2}>
                 <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8">
