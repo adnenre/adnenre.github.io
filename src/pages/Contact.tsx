@@ -23,23 +23,27 @@ export default function Contact() {
 
   return (
     <PageTransition>
-      <div className="container mx-auto px-4 py-16">
+      <div
+        style={{ height: "calc(100vh - 95px" }}
+        className="container h-full   my-auto py-16  max-w-6xl mx-auto"
+      >
         <FadeIn className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            {t.contact.title}
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t.contact.subtitle}
-          </p>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto my-2">
-            {t.contact.subtitle_2}
-          </p>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t.contact.subtitle_3}
-          </p>
+          <Card className="p-12 max-w-2xl mx-auto">
+            <CardHeader className="text-center">
+              <CardTitle>
+                {" "}
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  {t.contact.title}
+                </h1>
+              </CardTitle>
+              {/* <CardDescription> {t.contact.subtitle}</CardDescription>
+              <CardDescription> {t.contact.subtitle_2}</CardDescription> */}
+              <CardDescription> {t.contact.subtitle_3}</CardDescription>
+            </CardHeader>
+          </Card>
         </FadeIn>
 
-        <div className="grid md:grid-cols-1  gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-1  gap-8  mx-auto">
           <SlideIn direction="down" delay={0.4}>
             <Card>
               <CardHeader className="text-center">

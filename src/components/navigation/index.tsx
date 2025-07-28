@@ -10,7 +10,7 @@ export function Navigation() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1] }}
     >
-      <div className="w-full container flex justify-between items-center relative  h-16 px-4 ">
+      <div className="navigation w-full container flex justify-between items-center relative  h-16 px-4">
         {/* Desktop Navigation */}
         <LanguageSwitcher />
         <div className="w-[100px]"></div>

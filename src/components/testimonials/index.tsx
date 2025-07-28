@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight, Star, Quote } from "lucide-react";
+import { Avatar } from "../ui/avatar";
+import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 
 const TestimonialsSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -83,7 +85,7 @@ const TestimonialsSlider = () => {
           <div className="flex gap-4">
             <button
               onClick={goToPrev}
-              className="hover:cursor-pointer group flex justify-center items-center border dark:border-indigo-600 w-12 h-12 rounded-full hover:bg-indigo-600 transition-colors"
+              className="hover:cursor-pointer group flex justify-center items-center border dark:border-indigo-600 w-12 h-12 rounded-full hover:bg-indigo-600 transition-colors "
               aria-label="Previous testimonial"
             >
               <ArrowLeft className="w-6 h-6 text-indigo-600 group-hover:text-white" />
@@ -99,14 +101,14 @@ const TestimonialsSlider = () => {
         </div>
 
         {/* Slider container */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden rounded-2xl">
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-500 ease-in-out  "
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="w-full flex-shrink-0 px-4">
-                <div className=" border border-gray-200 rounded-2xl p-6 hover:border-indigo-600 transition-all h-full">
+              <div key={testimonial.id} className="w-full flex-shrink-0 px-4  ">
+                <div className=" border border-gray-200 rounded-2xl p-6 hover:border-indigo-600 transition-all h-full bg-white text-gray-900 @dark:bg-transparent @dark:text-white shadow-lg">
                   <div className="text-lg  min-h-[96px] flex flex-col">
                     <Quote />
                     <p className="px-10">{testimonial.quote}</p>
@@ -117,12 +119,14 @@ const TestimonialsSlider = () => {
                       <Star key={i} className="w-5 h-5 fill-current" />
                     ))}
                   </div>
-                  <div className="flex items-center gap-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
+                  <div className="flex items-center gap-4 ">
+                    <Avatar className="w-12 h-12 rounded-full object-cover text-center">
+                      <AvatarImage src={testimonial.image} />
+                      <AvatarFallback className="w-full flex justify-center items-center text-sm">
+                        {testimonial.name}
+                      </AvatarFallback>
+                    </Avatar>
+
                     <div>
                       <h3 className="font-medium ">{testimonial.name}</h3>
                       <p className="text-sm text-gray-500">
@@ -142,7 +146,7 @@ const TestimonialsSlider = () => {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-colors ${
+              className={` cursor-pointer w-3 h-3 rounded-full transition-colors ${
                 index === currentIndex ? "bg-indigo-600" : "bg-gray-300"
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
