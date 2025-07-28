@@ -6,6 +6,7 @@ const technologies = [
   "javascript",
   "typescript",
   "react",
+  "redux",
   "vue",
   "angular",
   "next",
@@ -15,6 +16,7 @@ const technologies = [
   "mysql",
   "astro",
   "bash",
+  "graphql",
 ];
 
 const InfiniteTechScroll = () => (
