@@ -16,6 +16,8 @@ export const translations = {
         "Guides architectural decisions and tech stack choices",
         "Ensures code quality, scalability, and best practices",
         "Mentors and supports developers",
+        "Building a Design System, reusable, consistent UI components",
+        "Achieve 90+ in Performance, Accessibility, SEO",
       ],
       description:
         "I lead the development of scalable, high-performance web applications using modern architectures. Passionate about mentoring teams, driving technical excellence, and delivering exceptional digital experiences that make an impact",
@@ -102,6 +104,8 @@ export const translations = {
         "Guide les décisions architecturales et les choix de stack technique",
         "Garantit la qualité du code, l'évolutivité et les bonnes pratiques",
         "Mentore et soutient les développeurs",
+        "Construire un Design System : des composants UI réutilisables et cohérents",
+        "Atteindre 90+ en Performance, Accessibilité et SEO",
       ],
       description:
         "Je pilote le développement d'applications web performantes et évolutives en utilisant des architectures modernes. Passionné par le mentorat d'équipes, l'excellence technique et la création d'expériences digitales qui font la différence.",
