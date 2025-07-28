@@ -7,3 +7,23 @@ body {
   overflow-x: hidden;
   overflow-y: auto; /* Optional: prevents scrolling */
 }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% / 3));
+  } /* More precise calculation */
+}
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+}
+.animate-paused {
+  animation-play-state: paused;
+}
+@media (min-width: 768px) {
+  .animate-scroll {
+    animation-duration: 50s;
+  }
+}

@@ -12,6 +12,7 @@ import Author from "@/assets/adnen.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { socialLinks } from "@/lib/socialLinks";
 import TestimonialsSlider from "@/components/testimonials";
+import InfiniteTechScroll from "@/components/ui/InfiniteTechScroll";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -19,7 +20,7 @@ export default function Home() {
 
   return (
     <PageTransition>
-      <div className="flex items-center justify-center bg-gradient-to-br from-background to-muted/20">
+      <div className="flex items-center justify-center ">
         <div className="container px-4 py-16 mx-auto text-center">
           <div className="relative max-w-5xl mx-auto space-y-2">
             <div className="z-10 mx-auto h-72 md:max-w-2xl   text-center border border-gray-200 rounded-2xl p-6 hover:border-indigo-600 transition-all ">
@@ -90,6 +91,9 @@ export default function Home() {
                 </div>
               </FadeIn>
             </div>
+            <ScaleIn delay={0.8}>
+              <InfiniteTechScroll />
+            </ScaleIn>
             <ScaleIn delay={0.8}>
               <TestimonialsSlider />
             </ScaleIn>
