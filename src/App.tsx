@@ -8,6 +8,12 @@ export default function App() {
   return (
     <ThemeProvider>
       <div className="h-[100%] bg-background text-foreground">
+        <div className="bg-gray-900 p-6 hidden">
+          <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold">Hi Im Adnen</h1>
+          <p className="text-white/80 text-base md:text-lg leading-relaxed">
+            if you see this message that means you are inspeting the website code :) welcome to my portfolio website.
+          </p>
+        </div>
         <Navigation />
         <DotGrid
           dotSize={2}
