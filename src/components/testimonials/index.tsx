@@ -26,7 +26,7 @@ const TestimonialsSlider = () => {
       image: "https://www.upwork.com/profile-portraits/c1CUKzRjKh4_pw2xN6m86pdg2p7E2ffhyjsEOI4pXvd_oqqRaClMN_A0paTugDHcaK",
     },
     {
-      id: 2,
+      id: 3,
       name: "Steven Porter, Novomedici LLC",
       role: "CEO",
       quote: "Grat job !!",
