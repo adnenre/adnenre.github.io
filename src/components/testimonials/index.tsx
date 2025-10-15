@@ -121,7 +121,7 @@ const TestimonialsSlider = () => {
                   </div>
                   <div className="flex items-center gap-4 ">
                     <Avatar className="w-12 h-12 rounded-full object-cover text-center">
-                      <AvatarImage src={testimonial.image} />
+                      <AvatarImage src={testimonial.image} alt={testimonial.name} />
                       <AvatarFallback className="w-full flex justify-center items-center text-sm">
                         {testimonial.name}
                       </AvatarFallback>
