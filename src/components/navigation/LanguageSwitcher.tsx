@@ -1,11 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Languages } from "lucide-react";
 import { Locale } from "@/lib/translations";
 
@@ -26,16 +21,8 @@ const LanguageSwitcher = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start">
         {Object.entries(languages).map(([locale, { name, flag }]) => (
-          <DropdownMenuItem
-            key={locale}
-            onClick={() => setLanguage(locale as Locale)}
-            className={"cursor-pointer"}
-          >
-            <img
-              width="20px"
-              height="20px"
-              src={`https://flagsapi.com/${flag}/flat/64.png`}
-            />
+          <DropdownMenuItem key={locale} onClick={() => setLanguage(locale as Locale)} className={"cursor-pointer"}>
+            <img width="20px" height="20px" src={`https://flagsapi.com/${flag}/flat/64.png`} alt={`${name} flag`} />
             <span className="mr-2">{name}</span>
           </DropdownMenuItem>
         ))}
