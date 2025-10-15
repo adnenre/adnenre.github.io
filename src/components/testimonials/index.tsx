@@ -131,9 +131,9 @@ const TestimonialsSlider = () => {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={` cursor-pointer w-3 h-3 rounded-full transition-colors ${index === currentIndex ? "bg-indigo-600" : "bg-gray-300"}`}
+              className={` cursor-pointer w-6 h-6  rounded-full transition-colors ${index === currentIndex ? "bg-indigo-600" : "bg-gray-300"}`}
               aria-label={`Go to testimonial ${index + 1}`}
-            />
+            ></button>
           ))}
         </div>
       </div>
