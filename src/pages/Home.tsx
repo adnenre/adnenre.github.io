@@ -33,7 +33,10 @@ export default function Home() {
                 </StaggerItem>
               </StaggerContainer>
             </div>
-            <div className="z-30 mt-15 w-[90%] max-w-4xl mx-auto md:max-w-xl  transform  border   text-center  md:-translate-y-24 -translate-y-16  p-15 overflow-hidden backdrop-blur-xs bg-gradient-to-br  from-white/500  to-white/10 border-white/5 rounded-2xl shadow-xl">
+            <div
+              role="main"
+              className="z-30 mt-15 w-[90%] max-w-4xl mx-auto md:max-w-xl  transform  border   text-center  md:-translate-y-24 -translate-y-16  p-15 overflow-hidden backdrop-blur-xs bg-gradient-to-br  from-white/500  to-white/10 border-white/5 rounded-2xl shadow-xl"
+            >
               {/* Developer Avatar */}
               <ScaleIn delay={0.2}>
                 <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8">
