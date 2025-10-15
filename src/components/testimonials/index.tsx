@@ -15,18 +15,15 @@ const TestimonialsSlider = () => {
       role: "Upwork Client",
       quote:
         "Adnen completed difficult tasks on time and with the best possible result. He has great experience in solving nontrivial tasks. I would consider him if I have any future tasks first. Very talented software developer. Hope to work again the in future.",
-      image:
-        "https://www.upwork.com/profile-portraits/c1CUKzRjKh4_pw2xN6m86pdg2p7E2ffhyjsEOI4pXvd_oqqRaClMN_A0paTugDHcaK",
+      image: "https://www.upwork.com/profile-portraits/c1CUKzRjKh4_pw2xN6m86pdg2p7E2ffhyjsEOI4pXvd_oqqRaClMN_A0paTugDHcaK",
     },
     {
       id: 2,
       name: "Jasurbek Nabijonov",
       cauntry: "Uzbekistan",
       role: "Upwork Client",
-      quote:
-        "Adnen did a great job again, it is the second time when we worked together and he showed excellent results and performance.",
-      image:
-        "https://www.upwork.com/profile-portraits/c1CUKzRjKh4_pw2xN6m86pdg2p7E2ffhyjsEOI4pXvd_oqqRaClMN_A0paTugDHcaK",
+      quote: "Adnen did a great job again, it is the second time when we worked together and he showed excellent results and performance.",
+      image: "https://www.upwork.com/profile-portraits/c1CUKzRjKh4_pw2xN6m86pdg2p7E2ffhyjsEOI4pXvd_oqqRaClMN_A0paTugDHcaK",
     },
     {
       id: 2,
@@ -42,8 +39,7 @@ const TestimonialsSlider = () => {
 
       role: "Upwork Client",
       quote: "Great thanks!",
-      image:
-        "https://www.upwork.com/profile-portraits/c1yEfqikd_pDU0swtvciAln_m3ezqo5Hmm7Xwby5vsJbbvcecbUwEGj7lnIcx9D6_0",
+      image: "https://www.upwork.com/profile-portraits/c1yEfqikd_pDU0swtvciAln_m3ezqo5Hmm7Xwby5vsJbbvcecbUwEGj7lnIcx9D6_0",
     },
   ];
 
@@ -59,16 +55,12 @@ const TestimonialsSlider = () => {
 
   const goToPrev = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
-    );
+    setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
 
   const goToNext = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prev) =>
-      prev === testimonials.length - 1 ? 0 : prev + 1
-    );
+    setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
 
   const goToSlide = (index: any) => {
@@ -102,16 +94,13 @@ const TestimonialsSlider = () => {
 
         {/* Slider container */}
         <div className="relative overflow-hidden rounded-2xl">
-          <div
-            className="flex transition-transform duration-500 ease-in-out  "
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
+          <div className="flex transition-transform duration-500 ease-in-out  " style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="w-full flex-shrink-0 px-4  ">
-                <div className=" border border-gray-200 rounded-2xl p-6 hover:border-indigo-600 transition-all h-full bg-white text-gray-900 @dark:bg-transparent @dark:text-white shadow-lg">
+                <div className=" border rounded-2xl p-6  transition-all md:h-full   backdrop-blur-xs bg-gradient-to-br from-white/500  to-white/5 shadow-xl">
                   <div className="text-lg  min-h-[96px] flex flex-col">
                     <Quote />
-                    <p className="px-10">{testimonial.quote}</p>
+                    <p className="px-10 text-l ">{testimonial.quote}</p>
                     <Quote className="mt-auto ml-auto" />
                   </div>
                   <div className="flex mb-6 gap-1 text-amber-500">
@@ -122,16 +111,12 @@ const TestimonialsSlider = () => {
                   <div className="flex items-center gap-4 ">
                     <Avatar className="w-12 h-12 rounded-full object-cover text-center">
                       <AvatarImage src={testimonial.image} alt={testimonial.name} />
-                      <AvatarFallback className="w-full flex justify-center items-center text-sm">
-                        {testimonial.name}
-                      </AvatarFallback>
+                      <AvatarFallback className="w-full flex justify-center items-center text-sm">{testimonial.name}</AvatarFallback>
                     </Avatar>
 
                     <div>
                       <h3 className="font-medium ">{testimonial.name}</h3>
-                      <p className="text-sm text-gray-500">
-                        {testimonial.role}
-                      </p>
+                      <p className="text-sm text-gray-500">{testimonial.role}</p>
                     </div>
                   </div>
                 </div>
@@ -146,9 +131,7 @@ const TestimonialsSlider = () => {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={` cursor-pointer w-3 h-3 rounded-full transition-colors ${
-                index === currentIndex ? "bg-indigo-600" : "bg-gray-300"
-              }`}
+              className={` cursor-pointer w-3 h-3 rounded-full transition-colors ${index === currentIndex ? "bg-indigo-600" : "bg-gray-300"}`}
               aria-label={`Go to testimonial ${index + 1}`}
             />
           ))}

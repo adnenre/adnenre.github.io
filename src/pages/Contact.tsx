@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { translations } from "@/lib/translations";
 
@@ -23,27 +17,21 @@ export default function Contact() {
 
   return (
     <PageTransition>
-      <div
-        style={{ height: "calc(100vh - 95px" }}
-        className="container h-full   my-auto py-16  max-w-6xl mx-auto"
-      >
+      <div style={{ height: "calc(100vh - 95px" }} className="container h-full mt-7   my-auto py-16  max-w-6xl mx-auto">
         <FadeIn className="text-center mb-16">
-          <Card className="p-12 max-w-2xl mx-auto">
+          <Card className="p-12 max-w-2xl mx-auto  backdrop-blur-2xl bg-gradient-to-br from-white/500  to-white/5 rounded-2xl shadow-2xl relative">
             <CardHeader className="text-center">
               <CardTitle>
                 {" "}
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                  {t.contact.title}
-                </h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.contact.title}</h1>
               </CardTitle>
-              {/* <CardDescription> {t.contact.subtitle}</CardDescription>
-              <CardDescription> {t.contact.subtitle_2}</CardDescription> */}
+
               <CardDescription> {t.contact.subtitle_3}</CardDescription>
             </CardHeader>
           </Card>
         </FadeIn>
 
-        <div className="grid md:grid-cols-1  gap-8  mx-auto">
+        <div className="grid md:grid-cols-1  gap-8  mx-auto shadow-2xl">
           <SlideIn direction="down" delay={0.4}>
             <Card>
               <CardHeader className="text-center">
@@ -51,10 +39,7 @@ export default function Contact() {
                 <CardDescription>{t.contact.social.subtitle}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
-                <StaggerContainer
-                  className="grid md:grid-cols-4 "
-                  staggerDelay={0.1}
-                >
+                <StaggerContainer className="grid md:grid-cols-4 " staggerDelay={0.1}>
                   {socialLinks.map((social) => (
                     <StaggerItem key={social.label}>
                       <a
@@ -66,9 +51,7 @@ export default function Contact() {
                         <social.icon className="w-5 h-5 text-primary" />
                         <div>
                           <div className="font-medium">{social.label}</div>
-                          <div className="text-sm text-muted-foreground">
-                            {social.username}
-                          </div>
+                          <div className="text-sm text-muted-foreground">{social.username}</div>
                         </div>
                       </a>
                     </StaggerItem>

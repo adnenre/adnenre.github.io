@@ -5,7 +5,7 @@ import { ThemeToggle } from "../ui/ThemeToggle";
 export function Navigation() {
   return (
     <motion.header
-      className=" z-50 w-screen  top-0 left-0 right-0  backdrop-blur-sm bg-background/30 border-b border-gray-200/10  fixed"
+      className=" z-50 w-screen  top-0 left-0 right-0  backdrop-blur-xs bg-background/30 border-b border-gray-200/10  fixed"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.25, 0.25, 0, 1] }}
