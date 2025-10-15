@@ -277,26 +277,16 @@ const DotGrid: React.FC<DotGridProps> = ({
       window.removeEventListener("mousemove", throttledMove);
       window.removeEventListener("click", onClick);
     };
-  }, [
-    maxSpeed,
-    speedTrigger,
-    proximity,
-    resistance,
-    returnDuration,
-    shockRadius,
-    shockStrength,
-  ]);
+  }, [maxSpeed, speedTrigger, proximity, resistance, returnDuration, shockRadius, shockStrength]);
 
   return (
     <section
+      aria-label="Background visualization"
       className={`h-full w-full p-4 flex items-center justify-center  relative ${className}`}
       style={style}
     >
       <div ref={wrapperRef} className="w-full h-full relative">
-        <canvas
-          ref={canvasRef}
-          className="absolute inset-0 w-full h-full pointer-events-none"
-        />
+        <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" />
         {children}
       </div>
     </section>
